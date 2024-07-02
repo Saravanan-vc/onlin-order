@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1087916424288",
+    "project_id": "vbhcg-f1c60",
+    "storage_bucket": "vbhcg-f1c60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087916424288:android:3bc566402393d7c8915705",
+        "android_client_info": {
+          "package_name": "com.example.cookeme"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCywyM0CVoic9gwKjEy6idRbXfIl78R4rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
