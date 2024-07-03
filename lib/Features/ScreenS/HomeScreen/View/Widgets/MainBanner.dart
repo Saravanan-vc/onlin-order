@@ -499,7 +499,7 @@ class Main_Banner extends StatelessWidget {
                                     ],
                                   ),
                                   Container(
-                                    height: 50,
+                                    height: 35,
                                     child: Image.asset(
                                       "Assets/snacks/spek.png",
                                       fit: BoxFit.cover,

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/add.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +20,7 @@ class scroll extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) => Container(
-              margin: EdgeInsets.only(top: 190, bottom: 100),
+              margin: EdgeInsets.only(top: 185, bottom: 80),
               width: 700,
               height: 300,
               child: SizedBox(
@@ -29,9 +29,19 @@ class scroll extends StatelessWidget {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text("Newly Launched Categories")),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Newly ",
+                            style: txt.labelRed(),
+                          ),
+                          Text(
+                            "Launched Categories",
+                            style: txt.label(),
+                          ),
+                        ],
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -58,7 +68,10 @@ class scroll extends StatelessWidget {
                                         horizontal: 6.0),
                                     child: Align(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Headsets")),
+                                        child: Text(
+                                          "Headsets",
+                                          style: txt.label(),
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomRight,
@@ -93,14 +106,17 @@ class scroll extends StatelessWidget {
                                         horizontal: 6.0),
                                     child: Align(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Headsets")),
+                                        child: Text(
+                                          "Luggage",
+                                          style: txt.label(),
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomRight,
                                     child: Container(
                                       child: Image.asset(
-                                        "Assets/snacks/air1.jpeg",
-                                        scale: 4,
+                                        "Assets/snacks/lugag.png",
+                                        scale: 13,
                                       ),
                                     ),
                                   )
@@ -136,14 +152,17 @@ class scroll extends StatelessWidget {
                                         horizontal: 6.0),
                                     child: Align(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Headsets")),
+                                        child: Text(
+                                          "Eyewear",
+                                          style: txt.label(),
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomRight,
                                     child: Container(
                                       child: Image.asset(
-                                        "Assets/snacks/air1.jpeg",
-                                        scale: 4,
+                                        "Assets/snacks/sunglass.png",
+                                        scale: 8,
                                       ),
                                     ),
                                   )
@@ -171,14 +190,15 @@ class scroll extends StatelessWidget {
                                         horizontal: 6.0),
                                     child: Align(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Headsets")),
+                                        child:
+                                            Text("Watch", style: txt.label())),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomRight,
                                     child: Container(
                                       child: Image.asset(
-                                        "Assets/snacks/air1.jpeg",
-                                        scale: 4,
+                                        "Assets/snacks/watch.png",
+                                        scale: 17,
                                       ),
                                     ),
                                   )
@@ -206,14 +226,17 @@ class scroll extends StatelessWidget {
                                         horizontal: 6.0),
                                     child: Align(
                                         alignment: Alignment.centerLeft,
-                                        child: Text("Headsets")),
+                                        child: Text(
+                                          "Kitchen Items",
+                                          style: txt.label(),
+                                        )),
                                   ),
                                   Align(
                                     alignment: Alignment.bottomRight,
                                     child: Container(
                                       child: Image.asset(
-                                        "Assets/snacks/air1.jpeg",
-                                        scale: 4,
+                                        "Assets/snacks/mixi.png",
+                                        scale: 19,
                                       ),
                                     ),
                                   )
@@ -228,9 +251,184 @@ class scroll extends StatelessWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: Align(
                         alignment: Alignment.centerLeft,
-                        child: Text("In Spotlight"),
+                        child: Text(
+                          "In Spotlight",
+                          style: txt.label(),
+                        ),
                       ),
                     ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Material(
+                                color: Colors.white,
+                                elevation: 6,
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(8),
+                                ),
+                                child: Container(
+                                  margin: EdgeInsets.all(2),
+                                  height: 185,
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(8),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text(
+                                          "T-shirt",
+                                          style: txt.username(),
+                                        ),
+                                      ),
+                                      Image.asset(
+                                        "Assets/snacks/shi.jpeg",
+                                        scale: 4,
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "₹999",
+                                              style: txt.dc(),
+                                            ),
+                                            add()
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Material(
+                                color: Colors.white,
+                                elevation: 6,
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(8),
+                                ),
+                                child: Container(
+                                  margin: EdgeInsets.all(2),
+                                  height: 185,
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(8),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text(
+                                          "Watch",
+                                          style: txt.username(),
+                                        ),
+                                      ),
+                                      Image.asset(
+                                        "Assets/snacks/wat.jpeg",
+                                        scale: 4.3,
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "₹999",
+                                              style: txt.dc(),
+                                            ),
+                                            add()
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(4.0),
+                              child: Material(
+                                color: Colors.white,
+                                elevation: 6,
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(8),
+                                ),
+                                child: Container(
+                                  margin: EdgeInsets.all(2),
+                                  height: 185,
+                                  width: 160,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.all(
+                                      Radius.circular(8),
+                                    ),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text(
+                                          "Cricket Bat",
+                                          style: txt.username(),
+                                        ),
+                                      ),
+                                      Image.asset(
+                                        "Assets/snacks/R.png",
+                                        scale: 36,
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 8.0),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Text(
+                                              "₹999",
+                                              style: txt.dc(),
+                                            ),
+                                            add()
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ),

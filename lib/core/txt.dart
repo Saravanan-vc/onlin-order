@@ -11,6 +11,14 @@ class txt {
     );
   }
 
+  static TextStyle labelRed() {
+    return TextStyle(
+      color: Colors.red,
+      fontSize: 18,
+      fontWeight: FontWeight.w600,
+    );
+  }
+
   static TextStyle big() {
     return TextStyle(
       color: Colors.black,
