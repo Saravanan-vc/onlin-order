@@ -5,6 +5,7 @@ import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/Card.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/MainBanner.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/carsoul.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/floating.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/newtostor.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,7 +77,7 @@ class homeScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     Text(
                       "Buy",
@@ -101,8 +102,28 @@ class homeScreen extends StatelessWidget {
               ),
               carsoul(),
               SizedBox(
-                height: 30,
-              )
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Text(
+                      "New",
+                      style: txt.offer(),
+                    ),
+                    SizedBox(
+                      width: 4,
+                    ),
+                    Text(
+                      'in Store',
+                      style: txt.secof(),
+                    ),
+                  ],
+                ),
+              ),
+              Newtostor(),
             ],
           ),
         ),
