@@ -3,6 +3,7 @@
 import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/Card.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/MainBanner.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/carsoul.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/floating.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
@@ -98,6 +99,10 @@ class homeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
+              carsoul(),
+              SizedBox(
+                height: 30,
+              )
             ],
           ),
         ),

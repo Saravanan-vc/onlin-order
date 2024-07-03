@@ -387,56 +387,58 @@ class cardBanner extends StatelessWidget {
                         Radius.circular(8),
                       ),
                     ),
-                    child: Column(children: [
-                      Container(
-                        height: 110,
-                        width: double.infinity,
-                        color: Colors.white,
-                        child: Image.asset(
-                          "Assets/snacks/fanta.jpg",
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Text(
-                          "Fanta Tin soft Drink ",
-                          style: txt.snacks(),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 22,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Align(
-                          alignment: Alignment.centerLeft,
-                          child: Text(
-                            '200ml',
-                            style: txt.gram(),
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 110,
+                          width: double.infinity,
+                          color: Colors.white,
+                          child: Image.asset(
+                            "Assets/snacks/fanta.jpg",
                           ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-                                '₹80',
-                                style: txt.price(),
-                              ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Text(
+                            "Fanta Tin soft Drink ",
+                            style: txt.snacks(),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 22,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Text(
+                              '200ml',
+                              style: txt.gram(),
                             ),
                           ),
-                          add()
-                        ],
-                      ),
-                    ]),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                              child: Align(
+                                alignment: Alignment.centerLeft,
+                                child: Text(
+                                  '₹80',
+                                  style: txt.price(),
+                                ),
+                              ),
+                            ),
+                            add()
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
