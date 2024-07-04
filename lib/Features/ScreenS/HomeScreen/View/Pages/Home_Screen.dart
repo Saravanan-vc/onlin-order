@@ -14,7 +14,6 @@ class homeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
@@ -74,7 +73,13 @@ class homeScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 10,
+              ),
               Newtostor(),
+              SizedBox(
+                height: 20,
+              )
             ],
           ),
         ),

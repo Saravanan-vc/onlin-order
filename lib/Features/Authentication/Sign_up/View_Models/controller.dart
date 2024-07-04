@@ -1,4 +1,5 @@
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Pages/Home_Screen.dart';
+import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
@@ -29,7 +30,7 @@ class signcontroller extends GetxController {
         password: password,
       );
       Get.off(
-        homeScreen(),
+        indexof(),
       );
       Get.snackbar(
         "Registed",

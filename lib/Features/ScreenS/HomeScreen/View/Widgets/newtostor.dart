@@ -60,7 +60,25 @@ class Newtostor extends StatelessWidget {
                     Radius.circular(8),
                   ),
                 ),
-              )
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Fashion",
+                        style: txt.offer(),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Image.asset(
+                        "Assets/snacks/shi.jpeg",
+                        scale: 4.5,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
           SizedBox(
@@ -81,6 +99,24 @@ class Newtostor extends StatelessWidget {
                     Radius.circular(8),
                   ),
                 ),
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Kitchen Items",
+                        style: txt.offer(),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Image.asset(
+                        "Assets/snacks/mixi.png",
+                        scale: 13,
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 140,
@@ -94,9 +130,27 @@ class Newtostor extends StatelessWidget {
                     Radius.circular(8),
                   ),
                 ),
-              )
+                child: Column(
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        "Watches",
+                        style: txt.offer(),
+                      ),
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Image.asset(
+                        "Assets/snacks/watch.png",
+                        scale: 12,
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
-          ),
+          )
         ],
       ),
     );

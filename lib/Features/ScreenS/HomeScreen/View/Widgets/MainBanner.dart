@@ -129,7 +129,7 @@ class Main_Banner extends StatelessWidget {
                                       height: 50,
                                       child: Image.asset(
                                         "Assets/snacks/chco.jpeg",
-                                        fit: BoxFit.cover,
+                                        scale: 11,
                                       ),
                                     )
                                   ],
@@ -179,6 +179,7 @@ class Main_Banner extends StatelessWidget {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),
                             ),
@@ -258,6 +259,7 @@ class Main_Banner extends StatelessWidget {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),
                             ),
@@ -347,6 +349,7 @@ class Main_Banner extends StatelessWidget {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),
                             ),
@@ -425,6 +428,7 @@ class Main_Banner extends StatelessWidget {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),
                             ),
@@ -503,6 +507,7 @@ class Main_Banner extends StatelessWidget {
                           height: 120,
                           width: 120,
                           decoration: BoxDecoration(
+                            color: Colors.white,
                             borderRadius: BorderRadius.all(
                               Radius.circular(10),
                             ),
@@ -520,6 +525,7 @@ class Main_Banner extends StatelessWidget {
                                       children: [
                                         Text(
                                           "Every Day",
+                                          textScaler: TextScaler.noScaling,
                                           style: txt.snacks(),
                                         ),
                                         Text(
