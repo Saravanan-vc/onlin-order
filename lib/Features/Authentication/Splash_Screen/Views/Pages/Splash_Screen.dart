@@ -2,7 +2,6 @@
 
 import 'dart:async';
 import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Pages/Home_Screen.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
