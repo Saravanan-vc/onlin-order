@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -31,15 +32,23 @@ class signcontroller extends GetxController {
         email: email,
         password: password,
       );
+      DocumentReference doc = pereference.doc();
+      Map<String, dynamic> addthis = {
+        'useremail': emc.text,
+        'userid': doc.id,
+        'username': name.text
+      };
+      pereference.add(addthis);
       Get.off(
-        indexof(),
+        loginScreen(),
       );
       Get.snackbar(
         "Registed",
-        "Sucessfully loged in",
+        "Sucessfully created please login to get inside",
       );
       emc.clear();
       pac.clear();
+      name.clear();
     } catch (e) {
       Get.snackbar(
         "Failed",
