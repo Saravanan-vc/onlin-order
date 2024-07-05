@@ -11,6 +11,22 @@ class txt {
     );
   }
 
+  static TextStyle botto() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 14,
+      fontWeight: FontWeight.w800,
+    );
+  }
+
+  static TextStyle bottoc() {
+    return TextStyle(
+      color: Colors.orange,
+      fontSize: 14,
+      fontWeight: FontWeight.w800,
+    );
+  }
+
   static TextStyle labelRed() {
     return TextStyle(
       color: Colors.red,

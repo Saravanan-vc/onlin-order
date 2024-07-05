@@ -36,7 +36,7 @@ class formT extends StatelessWidget {
                 //         return null;
                 //       },
                 style: txt.label(),
-                // controller: controller,
+                controller: logic.name,
                 decoration: InputDecoration(
                   label: Text(
                     "First Name",
@@ -100,6 +100,7 @@ class formT extends StatelessWidget {
                     "Last Name",
                     style: txt.label(),
                   ),
+                  hintText: "(Optional)",
                   prefixIcon: Icon(
                     Icons.person,
                     color: Colors.black,
@@ -238,7 +239,7 @@ class formT extends StatelessWidget {
                       width: 2,
                     ),
                   ),
-                  // suffixIcon: controller.text.length > 9
+                  // suffixIcon: int.parse("o") > 4
                   //     ? Icon(
                   //         Icons.task_alt,
                   //         color: Colors.green,
@@ -285,11 +286,15 @@ class formT extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () async {
-                if (logic.emc.text.isNotEmpty || logic.pac.text.isNotEmpty) {
+                if (logic.emc.text.isNotEmpty &&
+                    logic.pac.text.isNotEmpty &&
+                    logic.name.text.isNotEmpty) {
                   await logic.signwithauth(
                       email: logic.emc.text, password: logic.pac.text);
+                  
+                
                 } else {
-                  print("object");
+                  Get.snackbar("Error", "Check it correct");
                 }
               },
               child: Container(

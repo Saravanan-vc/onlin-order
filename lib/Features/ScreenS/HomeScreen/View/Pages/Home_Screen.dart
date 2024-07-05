@@ -16,72 +16,70 @@ class homeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Main_Banner(),
-              SizedBox(
-                height: 10,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Main_Banner(),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Buy",
+                    style: txt.offer(),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Text(
+                    'Snacks',
+                    style: txt.secof(),
+                  )
+                ],
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "Buy",
-                      style: txt.offer(),
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      'Snacks',
-                      style: txt.secof(),
-                    )
-                  ],
-                ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            cardBanner(),
+            SizedBox(
+              height: 10,
+            ),
+            carsoul(),
+            SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "New",
+                    style: txt.offer(),
+                  ),
+                  SizedBox(
+                    width: 4,
+                  ),
+                  Text(
+                    'in Store',
+                    style: txt.secof(),
+                  ),
+                ],
               ),
-              SizedBox(
-                height: 10,
-              ),
-              cardBanner(),
-              SizedBox(
-                height: 10,
-              ),
-              carsoul(),
-              SizedBox(
-                height: 20,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Text(
-                      "New",
-                      style: txt.offer(),
-                    ),
-                    SizedBox(
-                      width: 4,
-                    ),
-                    Text(
-                      'in Store',
-                      style: txt.secof(),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Newtostor(),
-              SizedBox(
-                height: 20,
-              )
-            ],
-          ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Newtostor(),
+            SizedBox(
+              height: 20,
+            )
+          ],
         ),
       ),
       floatingActionButton: scroll(),

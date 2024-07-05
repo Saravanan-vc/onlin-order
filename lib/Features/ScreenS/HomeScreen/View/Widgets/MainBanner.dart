@@ -5,6 +5,7 @@ import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:lottie/lottie.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Main_Banner extends StatelessWidget {
@@ -17,19 +18,21 @@ class Main_Banner extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.all(1.0),
         child: Container(
-          decoration: BoxDecoration(
-            color: Colors.purple[200],
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.elliptical(40.0, 40.0),
-              bottomRight: Radius.elliptical(40.0, 40.0),
+            decoration: BoxDecoration(
+              color: Colors.purple[200],
+              borderRadius: BorderRadius.only(
+                bottomLeft: Radius.elliptical(40.0, 40.0),
+                bottomRight: Radius.elliptical(40.0, 40.0),
+              ),
             ),
-          ),
-          width: MediaQuery.of(context).size.width,
-          height: 380,
-        ),
+            width: MediaQuery.of(context).size.width,
+            height: 490),
       ),
       Column(
         children: [
+          SizedBox(
+            height: 30,
+          ),
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 10.0,
@@ -73,12 +76,8 @@ class Main_Banner extends StatelessWidget {
               ],
             ),
           ),
-          Align(
-            alignment: Alignment.topCenter,
-            child: Text(
-              "BIG SALE",
-              style: txt.big(),
-            ),
+          Container(
+            child: Lottie.asset("Assets/rive/sale.json"),
           ),
           SizedBox(
             height: 10,
