@@ -29,8 +29,8 @@ class controller extends GetxController {
         password: PhoneC.text,
       );
 
-      EmailC.dispose();
-      PhoneC.dispose();
+      EmailC.clear();
+      PhoneC.clear();
       Get.off(indexof());
       Get.snackbar("Sucess", "Login is Sucess");
     } catch (e) {
