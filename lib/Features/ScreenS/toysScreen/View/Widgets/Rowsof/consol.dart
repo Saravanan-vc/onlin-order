@@ -34,25 +34,25 @@ class ConsolToy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/OIP.jpeg",
+                            "Assets/toysection/consolToy/consol1.png",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Lay's Cheddar & Sour Cream Potato Chips",
+                            "Consol for multi plat form",
                             style: txt.snacks(),
                           ),
                         ),
                         SizedBox(
-                          height: 6,
+                          height: 22,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '54g',
+                              '1 Piece',
                               style: txt.gram(),
                             ),
                           ),
@@ -65,11 +65,11 @@ class ConsolToy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹60',
+                                  '₹300',
                                   style: txt.price(),
                                 ),
                               ),
@@ -104,18 +104,18 @@ class ConsolToy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/coca.jpg",
+                            "Assets/toysection/consolToy/switch.webp",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Coca-Cola Soft Drink",
+                            "Switch Consol Best for mobil game",
                             style: txt.snacks(),
                           ),
                         ),
                         SizedBox(
-                          height: 22,
+                          height: 7,
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -135,11 +135,11 @@ class ConsolToy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹40',
+                                  '₹400',
                                   style: txt.price(),
                                 ),
                               ),
@@ -183,13 +183,13 @@ class ConsolToy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/OIP.jpeg",
+                            "Assets/toysection/consolToy/fullset.webp",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Lay's Cheddar & Sour Cream Potato Chips",
+                            "NINTEDO SWITCH full set with accessories",
                             style: txt.snacks(),
                           ),
                         ),
@@ -201,7 +201,7 @@ class ConsolToy extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '54g',
+                              '1 Peice',
                               style: txt.gram(),
                             ),
                           ),
@@ -214,11 +214,11 @@ class ConsolToy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 2.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹60',
+                                  '₹6000',
                                   style: txt.price(),
                                 ),
                               ),
@@ -253,13 +253,13 @@ class ConsolToy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/coca.jpg",
+                            "Assets/toysection/consolToy/specialedition.webp",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Coca-Cola Soft Drink",
+                            "NINTEDO Special Edition",
                             style: txt.snacks(),
                           ),
                         ),
@@ -271,7 +271,7 @@ class ConsolToy extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '750 ml',
+                              '1 Piece',
                               style: txt.gram(),
                             ),
                           ),
@@ -284,11 +284,11 @@ class ConsolToy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 7.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹40',
+                                  '₹950',
                                   style: txt.price(),
                                 ),
                               ),

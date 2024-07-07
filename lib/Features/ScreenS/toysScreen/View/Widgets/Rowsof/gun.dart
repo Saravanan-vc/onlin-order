@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/add.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -104,13 +106,13 @@ class Guntoy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/coca.jpg",
+                            "Assets/toysection/gunToy/hand.jpeg",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Coca-Cola Soft Drink",
+                            "9MM hand Gun with rubber bult",
                             style: txt.snacks(),
                           ),
                         ),
@@ -122,7 +124,7 @@ class Guntoy extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '750 ml',
+                              '1 Piece',
                               style: txt.gram(),
                             ),
                           ),
@@ -135,11 +137,11 @@ class Guntoy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹40',
+                                  '₹300',
                                   style: txt.price(),
                                 ),
                               ),
@@ -183,13 +185,13 @@ class Guntoy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/OIP.jpeg",
+                            "Assets/toysection/gunToy/shot.jpg",
                           ),
                         ),
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Text(
-                            "Lay's Cheddar & Sour Cream Potato Chips",
+                            "Short gun with rubber bulet",
                             style: txt.snacks(),
                           ),
                         ),
@@ -201,24 +203,24 @@ class Guntoy extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '54g',
+                              '1 Piece',
                               style: txt.gram(),
                             ),
                           ),
                         ),
                         SizedBox(
-                          height: 10,
+                          height: 22,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹60',
+                                  '₹800',
                                   style: txt.price(),
                                 ),
                               ),
@@ -253,7 +255,7 @@ class Guntoy extends StatelessWidget {
                           width: double.infinity,
                           color: Colors.white,
                           child: Image.asset(
-                            "Assets/snacks/coca.jpg",
+                            "Assets/toysection/gunToy/m416.png",
                           ),
                         ),
                         Padding(
@@ -271,7 +273,7 @@ class Guntoy extends StatelessWidget {
                           child: Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
-                              '750 ml',
+                              '1 Piece',
                               style: txt.gram(),
                             ),
                           ),
@@ -280,15 +282,15 @@ class Guntoy extends StatelessWidget {
                           height: 10,
                         ),
                         Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
-                                  '₹40',
+                                  '₹900',
                                   style: txt.price(),
                                 ),
                               ),

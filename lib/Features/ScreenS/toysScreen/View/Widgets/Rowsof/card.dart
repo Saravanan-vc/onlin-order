@@ -65,7 +65,7 @@ class Cardtoy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
@@ -135,7 +135,7 @@ class Cardtoy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(
@@ -284,7 +284,7 @@ class Cardtoy extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
                               child: Align(
                                 alignment: Alignment.centerLeft,
                                 child: Text(

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/Mainadd.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/add.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
@@ -308,7 +309,7 @@ class scroll extends StatelessWidget {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            add()
+                                            Mainadd(count: 0)
                                           ],
                                         ),
                                       )
@@ -362,7 +363,7 @@ class scroll extends StatelessWidget {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            add()
+                                            Mainadd(count: 0)
                                           ],
                                         ),
                                       )
@@ -416,7 +417,7 @@ class scroll extends StatelessWidget {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            add()
+                                            Mainadd(count: 0)
                                           ],
                                         ),
                                       )

@@ -14,7 +14,6 @@ class add extends StatefulWidget {
 }
 
 class _addState extends State<add> {
-
   @override
   Widget build(BuildContext context) {
     return GetBuilder<cartController>(builder: (logic) {
@@ -32,7 +31,6 @@ class _addState extends State<add> {
             );
             setState(() {
               logic.Increment();
-              
             });
           } else {
             Get.snackbar(

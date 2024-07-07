@@ -76,6 +76,7 @@ class Toyscreen extends StatelessWidget {
                       )
                     ],
                   ),
+                  elevation: 0,
                 ),
               ),
               SizedBox(
