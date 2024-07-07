@@ -6,7 +6,6 @@ import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:lottie/lottie.dart';
 
 class cartpage extends StatelessWidget {
   const cartpage({super.key});

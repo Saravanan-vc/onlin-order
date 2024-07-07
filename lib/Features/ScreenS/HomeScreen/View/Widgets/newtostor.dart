@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:cookeme/Features/ScreenS/toysScreen/View/pages/toyScreen.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class Newtostor extends StatelessWidget {
   const Newtostor({super.key});
@@ -14,38 +16,43 @@ class Newtostor extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 140,
-                width: 180,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 2,
-                    color: Colors.black.withOpacity(0.09),
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        "New Toys",
-                        style: txt.offer(),
-                      ),
+              GestureDetector(
+                onTap: () {
+                  Get.off(Toyscreen());
+                },
+                child: Container(
+                  height: 140,
+                  width: 180,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Colors.black.withOpacity(0.09),
                     ),
-                    SizedBox(
-                      height: 22,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
                     ),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset(
-                        "Assets/snacks/gun.png",
-                        scale: 8,
+                  ),
+                  child: Column(
+                    children: [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "New Toys",
+                          style: txt.offer(),
+                        ),
                       ),
-                    )
-                  ],
+                      SizedBox(
+                        height: 22,
+                      ),
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Image.asset(
+                          "Assets/snacks/gun.png",
+                          scale: 8,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Container(

@@ -80,11 +80,11 @@ class _indexofState extends State<indexof> {
                           },
                           child: Column(
                             children: [
-                              Icon(
-                                CupertinoIcons.home,
-                                size: 30,
+                              SizedBox(
+                                height: 45,
+                                width: 45,
+                                child: Image.asset("Assets/snacks/home.gif"),
                               ),
-                              Text("Home")
                             ],
                           )),
                       GestureDetector(
@@ -93,11 +93,12 @@ class _indexofState extends State<indexof> {
                         },
                         child: Column(
                           children: [
-                            Icon(
-                              CupertinoIcons.cart,
-                              size: 30,
+                            SizedBox(
+                              height: 45,
+                              width: 45,
+                              child: Image.asset(
+                                  "Assets/snacks/shopping-cart.gif"),
                             ),
-                            Text("Cart")
                           ],
                         ),
                       ),

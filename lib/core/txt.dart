@@ -19,6 +19,14 @@ class txt {
         wordSpacing: 2);
   }
 
+  static TextStyle carte() {
+    return TextStyle(
+        color: Colors.blue,
+        fontSize: 22,
+        fontWeight: FontWeight.w600,
+        wordSpacing: 2);
+  }
+
   static TextStyle num() {
     return TextStyle(fontSize: 16);
   }
