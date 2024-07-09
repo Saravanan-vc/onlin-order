@@ -118,6 +118,5 @@ class _MainaddState extends State<Mainadd> {
                 ],
               )),
     );
-    ;
   }
 }

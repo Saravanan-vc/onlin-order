@@ -64,6 +64,24 @@ class txt {
     );
   }
 
+  static TextStyle Heading() {
+    return TextStyle(
+      color: Colors.white,
+      fontSize: 38,
+      fontFamily: "boldpro",
+      fontWeight: FontWeight.w800,
+    );
+  }
+
+  static TextStyle Headingb() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 38,
+      fontFamily: "boldpro",
+      fontWeight: FontWeight.w800,
+    );
+  }
+
   static TextStyle addp() {
     return TextStyle(
       fontSize: 20,

@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/everydayofferscreen.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/groceries.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/homeclean.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -40,13 +43,18 @@ class Main_Banner extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Container(
-                  width: 45,
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                    borderRadius: BorderRadius.all(
-                      Radius.circular(8.4),
+                GestureDetector(
+                  onTap: () {
+                    print('profil');
+                  },
+                  child: Container(
+                    width: 45,
+                    height: 45,
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.4),
+                      ),
                     ),
                   ),
                 ),
@@ -92,7 +100,9 @@ class Main_Banner extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.off(Seconscreen());
+                        },
                         child: Container(
                           height: 120,
                           width: 120,
@@ -173,7 +183,9 @@ class Main_Banner extends StatelessWidget {
                       ),
                       //1st
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.off(Groceries());
+                        },
                         child: Container(
                           height: 120,
                           width: 120,
@@ -253,7 +265,9 @@ class Main_Banner extends StatelessWidget {
                       ),
                       //2nd
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.off(Homeclean());
+                        },
                         child: Container(
                           height: 120,
                           width: 120,

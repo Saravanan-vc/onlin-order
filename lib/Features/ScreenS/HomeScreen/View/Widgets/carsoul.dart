@@ -19,9 +19,21 @@ class carsoul extends StatelessWidget {
                       Radius.circular(8),
                     ),
                   ),
-                  child: Image.asset(
-                    "Assets/snacks/banner$Index.jpg",
-                    fit: BoxFit.cover,
+                  child: GestureDetector(
+                    onTap: () {
+                      switch (Index) {
+                        case 0: //sent
+                          {}
+                        case 1: //Meat
+                          {}
+                        case 2: //monsoon
+                          {}
+                      }
+                    },
+                    child: Image.asset(
+                      "Assets/snacks/banner$Index.jpg",
+                      fit: BoxFit.cover,
+                    ),
                   )),
             ),
         options: CarouselOptions(autoPlay: true, height: 180));
