@@ -4,6 +4,7 @@ import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Sc
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/everydayofferscreen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/groceries.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/homeclean.dart';
+import 'package:cookeme/Features/ScreenS/user/view/pages/user.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -45,17 +46,13 @@ class Main_Banner extends StatelessWidget {
               children: [
                 GestureDetector(
                   onTap: () {
-                    print('profil');
+                    Get.off(
+                      Userprofiel(),
+                    );
                   },
-                  child: Container(
-                    width: 45,
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.4),
-                      ),
-                    ),
+                  child: Image.asset(
+                    "Assets/listoforders/4.png",
+                    scale: 12,
                   ),
                 ),
                 SizedBox(
@@ -67,19 +64,6 @@ class Main_Banner extends StatelessWidget {
                 ),
                 SizedBox(
                   width: w / 2,
-                ),
-                InkWell(
-                  onTap: () async {
-                    SharedPreferences preferences =
-                        await SharedPreferences.getInstance();
-
-                    preferences.clear();
-                    Get.off(loginScreen());
-                  },
-                  child: Icon(
-                    Icons.logout_rounded,
-                    size: 30,
-                  ),
                 ),
               ],
             ),

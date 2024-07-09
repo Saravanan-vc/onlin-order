@@ -72,11 +72,13 @@ flutter:
     - Assets/rive/
     - Assets/seconchocolate/
     - Assets/seconclean/
+    - Assets/listoforders/
     - Assets/secongrocery/
     - Assets/toysection/cardToy/
     - Assets/toysection/consolToy/
     - Assets/toysection/gunToy/
     - Assets/toysection/softToy/
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
