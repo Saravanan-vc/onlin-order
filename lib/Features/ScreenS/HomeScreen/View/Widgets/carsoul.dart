@@ -28,15 +28,27 @@ class carsoul extends StatelessWidget {
                       switch (Index) {
                         case 0: //sent
                           {
-                            Get.off(Sentscreen());
+                            Get.off(
+                              Sentscreen(),
+                              transition: Transition.cupertino,
+                              duration: Duration(milliseconds: 950),
+                            );
                           }
                         case 1: //Meat
                           {
-                            Get.off(Meatscreen());
+                            Get.off(
+                              Meatscreen(),
+                              transition: Transition.cupertino,
+                              duration: Duration(milliseconds: 950),
+                            );
                           }
                         case 2: //monsoon
                           {
-                            Get.off(Mansoonscreen());
+                            Get.off(
+                              Mansoonscreen(),
+                              transition: Transition.cupertino,
+                              duration: Duration(milliseconds: 950),
+                            );
                           }
                       }
                     },

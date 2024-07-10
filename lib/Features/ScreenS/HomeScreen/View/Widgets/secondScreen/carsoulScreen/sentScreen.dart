@@ -16,6 +16,8 @@ class Sentscreen extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Get.off(
             indexof(),
+            transition: Transition.cupertino,
+            duration: Duration(milliseconds: 950),
           ),
           icon: Icon(
             CupertinoIcons.back,
