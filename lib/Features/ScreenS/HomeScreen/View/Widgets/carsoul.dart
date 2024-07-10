@@ -1,7 +1,11 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/Mansoon.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/meatScreen.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/sentScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class carsoul extends StatelessWidget {
   const carsoul({super.key});
@@ -23,11 +27,17 @@ class carsoul extends StatelessWidget {
                     onTap: () {
                       switch (Index) {
                         case 0: //sent
-                          {}
+                          {
+                            Get.off(Sentscreen());
+                          }
                         case 1: //Meat
-                          {}
+                          {
+                            Get.off(Meatscreen());
+                          }
                         case 2: //monsoon
-                          {}
+                          {
+                            Get.off(Mansoonscreen());
+                          }
                       }
                     },
                     child: Image.asset(

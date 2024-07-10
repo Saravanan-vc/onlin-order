@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "Lay's Cheddar & Sour Cream Potato Chips",
+                          Pimage: "Assets/snacks/OIP.jpeg",
+                          Pgram: "54g",
+                          Pprice: "₹60",
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,
@@ -94,7 +102,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "Coca-Cola Soft Drink",
+                          Pimage: "Assets/snacks/coca.jpg",
+                          Pgram: '750 ml',
+                          Pprice: '₹40',
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,
@@ -166,7 +181,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "KurKure Green Chutnry with spicy & Hot",
+                          Pimage: "Assets/snacks/kur.jpg",
+                          Pgram: '84g',
+                          Pprice: '₹60',
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,
@@ -246,7 +268,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "Mountan Dew Soft Drink",
+                          Pimage: "Assets/snacks/dew.jpg",
+                          Pgram: '750ml',
+                          Pprice: '₹40',
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,
@@ -318,7 +347,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "Pepsi tin Soft Drink",
+                          Pimage: "Assets/snacks/pepsi.jpg",
+                          Pgram: '200ml',
+                          Pprice: '₹80',
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,
@@ -390,7 +426,14 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      print('Proudct');
+                      Get.off(
+                        Productscreen(
+                          Pname: "Fanta Tin soft Drink ",
+                          Pimage: "Assets/snacks/fanta.jpg",
+                          Pgram: '200ml',
+                          Pprice: '₹80',
+                        ),
+                      );
                     },
                     child: Container(
                       height: 220,

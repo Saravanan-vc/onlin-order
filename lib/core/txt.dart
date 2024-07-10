@@ -97,6 +97,14 @@ class txt {
     );
   }
 
+  static TextStyle pgram() {
+    return TextStyle(
+      fontSize: 18,
+      color: Colors.black.withOpacity(0.6),
+      fontWeight: FontWeight.w600,
+    );
+  }
+
   static TextStyle price() {
     return TextStyle(
       color: Colors.black,
@@ -144,6 +152,13 @@ class txt {
     return TextStyle(
       color: Colors.white,
       fontSize: 18,
+      fontWeight: FontWeight.w400,
+    );
+  }
+  static TextStyle mini() {
+    return TextStyle(
+      color: Colors.white,
+      fontSize: 16,
       fontWeight: FontWeight.w400,
     );
   }

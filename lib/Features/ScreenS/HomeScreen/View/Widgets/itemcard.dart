@@ -82,7 +82,7 @@ class Itemcard extends StatelessWidget {
                     width: MediaQuery.of(context).size.width / 2.3,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(4),
-                      color: Colors.amber,
+                      color: Colors.amber.shade200,
                     ),
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 4.0),
