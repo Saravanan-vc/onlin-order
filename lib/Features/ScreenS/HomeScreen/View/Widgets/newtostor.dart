@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/Fashion.dart';
 import 'package:cookeme/Features/ScreenS/toysScreen/View/pages/toyScreen.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -55,35 +56,44 @@ class Newtostor extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                height: 140,
-                width: 180,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 2,
-                    color: Colors.black.withOpacity(0.09),
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(8),
-                  ),
-                ),
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        "Fashion",
-                        style: txt.offer(),
-                      ),
+              GestureDetector(
+                onTap: () {
+                  Get.off(
+                    Fashionpage(),
+                    transition: Transition.cupertino,
+                    duration: Duration(milliseconds: 950),
+                  );
+                },
+                child: Container(
+                  height: 140,
+                  width: 180,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Colors.black.withOpacity(0.09),
                     ),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset(
-                        "Assets/snacks/shi.jpeg",
-                        scale: 4.5,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "Fashion",
+                          style: txt.offer(),
+                        ),
                       ),
-                    )
-                  ],
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Image.asset(
+                          "Assets/snacks/shi.jpeg",
+                          scale: 4.5,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
