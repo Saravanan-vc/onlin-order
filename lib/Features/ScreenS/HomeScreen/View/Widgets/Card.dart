@@ -30,6 +30,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: "54g",
                           Pprice: "₹60",
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(
@@ -109,6 +111,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: '750 ml',
                           Pprice: '₹40',
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(
@@ -188,6 +192,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: '84g',
                           Pprice: '₹60',
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(
@@ -275,6 +281,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: '750ml',
                           Pprice: '₹40',
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(
@@ -354,6 +362,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: '200ml',
                           Pprice: '₹80',
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(
@@ -433,6 +443,8 @@ class cardBanner extends StatelessWidget {
                           Pgram: '200ml',
                           Pprice: '₹80',
                         ),
+                        transition: Transition.cupertino,
+                        duration: Duration(milliseconds: 950),
                       );
                     },
                     child: Container(

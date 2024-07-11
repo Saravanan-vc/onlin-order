@@ -10,6 +10,10 @@ class scroll extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var H = MediaQuery.of(context).size.height;
+    var W = MediaQuery.of(context).size.width;
+    // vertical wid = 384
+    //horzontal wid = 782
     return SizedBox(
       height: 58,
       width: 58,
@@ -20,8 +24,8 @@ class scroll extends StatelessWidget {
           showDialog(
             context: context,
             builder: (context) => Container(
-              margin: EdgeInsets.only(top: 185, bottom: 80),
-              width: 700,
+              margin: EdgeInsets.only(top: H / 5, bottom: H / 8),
+              width: double.infinity,
               height: 300,
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,

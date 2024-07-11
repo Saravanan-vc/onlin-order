@@ -47,6 +47,8 @@ class Main_Banner extends StatelessWidget {
                   onTap: () {
                     Get.off(
                       Userprofiel(),
+                      transition: Transition.cupertino,
+                      duration: Duration(milliseconds: 950),
                     );
                   },
                   child: Image.asset(
@@ -84,7 +86,11 @@ class Main_Banner extends StatelessWidget {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Get.off(Seconscreen());
+                          Get.off(
+                            Seconscreen(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
                         },
                         child: Container(
                           height: 120,
@@ -167,7 +173,11 @@ class Main_Banner extends StatelessWidget {
                       //1st
                       GestureDetector(
                         onTap: () {
-                          Get.off(Groceries());
+                          Get.off(
+                            Groceries(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
                         },
                         child: Container(
                           height: 120,
@@ -249,7 +259,11 @@ class Main_Banner extends StatelessWidget {
                       //2nd
                       GestureDetector(
                         onTap: () {
-                          Get.off(Homeclean());
+                          Get.off(
+                            Homeclean(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
                         },
                         child: Container(
                           height: 120,
