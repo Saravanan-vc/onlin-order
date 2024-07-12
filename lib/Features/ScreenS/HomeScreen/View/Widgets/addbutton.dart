@@ -23,6 +23,8 @@ class _MainaddState extends State<Mainadd> {
             "Sucess",
             "Add to cart",
             colorText: Colors.white,
+            animationDuration: Duration(seconds: 2),
+            dismissDirection: DismissDirection.horizontal,
           );
           setState(() {
             widget.count++;

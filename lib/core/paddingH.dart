@@ -8,6 +8,13 @@ class Padd {
     );
   }
 
+  static Padding all(Widget child) {
+    return Padding(
+      padding: EdgeInsets.all(4.0),
+      child: child,
+    );
+  }
+
   static Padding horonlyleft(Widget child) {
     return Padding(
       padding: EdgeInsets.only(left: 10),
