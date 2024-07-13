@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/Widgets/card.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/Widgets/offerBanner.dart';
 import 'package:flutter/material.dart';
 
 class Tshirtpage extends StatelessWidget {
@@ -8,11 +9,13 @@ class Tshirtpage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var W = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(
         children: [
+          Offerbanner(
+            image: "Assets/snacks/tshirt.png",
+          ),
           Row(
             children: [
               cardfortstcg(

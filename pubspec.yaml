@@ -42,6 +42,7 @@ dependencies:
   carousel_slider: ^4.2.1
   lottie: ^3.1.2
   cloud_firestore: ^5.0.2
+  firebase_storage: ^12.1.1
   
 
 dev_dependencies:
@@ -79,6 +80,7 @@ flutter:
     - Assets/toysection/gunToy/
     - Assets/toysection/softToy/
     - Assets/Fashion/Tshirt/
+    - Assets/Fashion/Short/
     
   #   - images/a_dot_ham.jpeg
 

@@ -48,9 +48,7 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/OIP.jpeg",
-                            ),
+                            child: Image.network(logic.lays),
                           ),
                           Padding(
                             padding:
@@ -129,8 +127,8 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/coca.jpg",
+                            child: Image.network(
+                              logic.coca,
                             ),
                           ),
                           Padding(
@@ -207,13 +205,10 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/kur.jpg",
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child: Image.network(logic.kurkure)),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -296,13 +291,10 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/dew.jpg",
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child: Image.network(logic.mountain)),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -380,9 +372,7 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/pepsi.jpg",
-                            ),
+                            child: Image.network(logic.pepsi),
                           ),
                           Padding(
                             padding:
@@ -458,13 +448,10 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: Image.asset(
-                              "Assets/snacks/fanta.jpg",
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child: Image.network(logic.fanta)),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
