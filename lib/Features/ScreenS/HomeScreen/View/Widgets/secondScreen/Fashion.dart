@@ -30,8 +30,7 @@ class _FashionpageState extends State<Fashionpage> {
   List screen = [
     Tshirtpage(),
     ShortPage(),
-    Trackpage(),
-    Coolinglasspage(),
+    TrackPage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -46,7 +45,7 @@ class _FashionpageState extends State<Fashionpage> {
               "Apparel & Lifestyle",
               style: txt.label(),
             ),
-            Text("200 items"),
+            Text("100 items"),
           ],
         ),
         leading: IconButton(
@@ -80,20 +79,17 @@ class _FashionpageState extends State<Fashionpage> {
                     },
                     child: Padd.horonlyleft(
                       Container(
-                        width: 80,
-                        height: 90,
-                        decoration: BoxDecoration(
-                          color: c1 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
+                          width: 80,
+                          height: 90,
+                          decoration: BoxDecoration(
+                            color: c1 ? Colors.white : Colors.transparent,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                            ),
                           ),
-                        ),
-                        child: Icon(
-                          Icons.local_activity,
-                          size: 30,
-                        ),
-                      ),
+                          child:
+                              Image.asset("Assets/Fashion/Tshirt/tshirt.png")),
                     )),
                 siz.ten(),
                 GestureDetector(
@@ -108,20 +104,20 @@ class _FashionpageState extends State<Fashionpage> {
                     },
                     child: Padd.horonlyleft(
                       Container(
-                        width: 80,
-                        height: 90,
-                        decoration: BoxDecoration(
-                          color: c2 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
+                          width: 80,
+                          height: 90,
+                          decoration: BoxDecoration(
+                            color: c2 ? Colors.white : Colors.transparent,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                            ),
                           ),
-                        ),
-                        child: Icon(
-                          Icons.local_activity,
-                          size: 30,
-                        ),
-                      ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Image.asset(
+                                "Assets/Fashion/Short/shortsBs.png"),
+                          )),
                     )),
                 siz.ten(),
                 GestureDetector(
@@ -136,48 +132,22 @@ class _FashionpageState extends State<Fashionpage> {
                     },
                     child: Padd.horonlyleft(
                       Container(
-                        width: 80,
-                        height: 90,
-                        decoration: BoxDecoration(
-                          color: c3 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
+                          width: 80,
+                          height: 90,
+                          decoration: BoxDecoration(
+                            color: c3 ? Colors.white : Colors.transparent,
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10),
+                              bottomLeft: Radius.circular(10),
+                            ),
                           ),
-                        ),
-                        child: Icon(
-                          Icons.local_activity,
-                          size: 30,
-                        ),
-                      ),
-                    )),
-                siz.ten(),
-                GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        // c1 = !c1;
-                        num = 3;
-                        c4 = T;
-                        c1 = c2 = c3 = F;
-                      });
-                      print("c4 is $c4");
-                    },
-                    child: Padd.horonlyleft(
-                      Container(
-                        width: 80,
-                        height: 90,
-                        decoration: BoxDecoration(
-                          color: c4 ? Colors.white : Colors.transparent,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(10),
-                            bottomLeft: Radius.circular(10),
-                          ),
-                        ),
-                        child: Icon(
-                          Icons.local_activity,
-                          size: 30,
-                        ),
-                      ),
+                          child: Padding(
+                            padding: const EdgeInsets.all(4.0),
+                            child: Image.asset(
+                              "Assets/Fashion/track/trackJ.png",
+                              scale: 9,
+                            ),
+                          )),
                     )),
               ],
             ),

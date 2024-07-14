@@ -46,13 +46,12 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.lays,
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child: CachedNetworkImage(
+                                imageUrl: logic.lays,
+                              )),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -381,9 +380,7 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.pepsi,
-                            ),
+                            child: CachedNetworkImage(imageUrl: logic.pepsi),
                           ),
                           Padding(
                             padding:
@@ -459,13 +456,10 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.fanta,
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child: Image.network(logic.fanta)),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
