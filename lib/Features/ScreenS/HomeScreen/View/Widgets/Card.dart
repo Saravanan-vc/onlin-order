@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
@@ -48,7 +49,9 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network(logic.lays),
+                            child: CachedNetworkImage(
+                              imageUrl: logic.lays,
+                            ),
                           ),
                           Padding(
                             padding:
@@ -127,8 +130,8 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network(
-                              logic.coca,
+                            child: CachedNetworkImage(
+                              imageUrl: logic.coca,
                             ),
                           ),
                           Padding(
@@ -205,10 +208,13 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                              height: 110,
-                              width: double.infinity,
-                              color: Colors.white,
-                              child: Image.network(logic.kurkure)),
+                            height: 110,
+                            width: double.infinity,
+                            color: Colors.white,
+                            child: CachedNetworkImage(
+                              imageUrl: logic.kurkure,
+                            ),
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -291,10 +297,13 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                              height: 110,
-                              width: double.infinity,
-                              color: Colors.white,
-                              child: Image.network(logic.mountain)),
+                            height: 110,
+                            width: double.infinity,
+                            color: Colors.white,
+                            child: CachedNetworkImage(
+                              imageUrl: logic.mountain,
+                            ),
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -372,7 +381,9 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network(logic.pepsi),
+                            child: CachedNetworkImage(
+                              imageUrl: logic.pepsi,
+                            ),
                           ),
                           Padding(
                             padding:
@@ -448,10 +459,13 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                              height: 110,
-                              width: double.infinity,
-                              color: Colors.white,
-                              child: Image.network(logic.fanta)),
+                            height: 110,
+                            width: double.infinity,
+                            color: Colors.white,
+                            child: CachedNetworkImage(
+                              imageUrl: logic.fanta,
+                            ),
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
