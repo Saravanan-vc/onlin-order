@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
+import 'package:cookeme/Features/Authentication/Sign_up/View_Models/model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +17,21 @@ class signcontroller extends GetxController {
   FirebaseAuth firebaseAuth1 = FirebaseAuth.instance;
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   late CollectionReference pereference;
+  List<userdoc> users = [];
   @override
-  void onInit() {
+  void onInit() async {
     pereference = firebaseFirestore.collection("user");
+    await fetchdata();
     super.onInit();
+  }
+
+  fetchdata() async {
+    QuerySnapshot querySnapshot = await pereference.get();
+    List<userdoc> colle = querySnapshot.docs
+        .map((doc) => userdoc.fromjson(doc.data() as Map<String, dynamic>))
+        .toList();
+    users.clear();
+    users.assignAll(colle);
   }
 
   Future<void> signwithauth({

@@ -3,7 +3,6 @@
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/pages/Short.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/pages/Track.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/pages/Tshirt.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/pages/coolinglass.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:cookeme/core/paddingH.dart';
 import 'package:cookeme/core/sizedbox.dart';

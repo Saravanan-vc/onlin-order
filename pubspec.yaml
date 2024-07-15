@@ -44,6 +44,9 @@ dependencies:
   cloud_firestore: ^5.0.2
   firebase_storage: ^12.1.1
   cached_network_image: ^3.3.1
+  json_serializable: ^6.8.0
+  json_annotation: ^4.9.0
+  build_runner: ^2.4.11
   
 
 dev_dependencies:

@@ -11,7 +11,7 @@ class scroll extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var H = MediaQuery.of(context).size.height;
-    var W = MediaQuery.of(context).size.width;
+    // var W = MediaQuery.of(context).size.width;
     // vertical wid = 384
     //horzontal wid = 782
     return SizedBox(
