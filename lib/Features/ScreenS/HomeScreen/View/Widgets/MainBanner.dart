@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/everydayofferscreen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/groceries.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/homeclean.dart';

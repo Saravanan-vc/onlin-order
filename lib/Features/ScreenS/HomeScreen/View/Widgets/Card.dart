@@ -3,6 +3,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/modelp.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +79,7 @@ class cardBanner extends StatelessWidget {
                             height: 10,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Padding(
                                 padding:

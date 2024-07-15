@@ -113,6 +113,15 @@ class txt {
     );
   }
 
+  static TextStyle offprice() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 16,
+      fontWeight: FontWeight.w600,
+      decoration: TextDecoration.lineThrough,
+    );
+  }
+
   static TextStyle snacks() {
     return TextStyle(
       height: 0,
@@ -155,6 +164,7 @@ class txt {
       fontWeight: FontWeight.w400,
     );
   }
+
   static TextStyle mini() {
     return TextStyle(
       color: Colors.white,
