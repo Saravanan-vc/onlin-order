@@ -1,10 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cached_network_image/cached_network_image.dart';
+import 'dart:math';
+
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/modelp.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productscontroller.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -15,7 +15,8 @@ class cardBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
-    return GetBuilder<countforproduct>(builder: (logic) {
+    return GetBuilder<fetchproduct>(builder: (logic) {
+      print(logic.product.length);
       return Column(
         children: [
           Row(
@@ -27,10 +28,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "Lay's Cheddar & Sour Cream Potato Chips",
-                          Pimage: "Assets/snacks/OIP.jpeg",
-                          Pgram: "54g",
-                          Pprice: "₹60",
+                          Pname: "${logic.product[0].name}",
+                          Pimage: "Assets/snacks/coca.jpg",
+                          Pgram: '${logic.product[0].gram}',
+                          Pprice: '₹${logic.product[0].price}',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -50,36 +51,31 @@ class cardBanner extends StatelessWidget {
                               height: 110,
                               width: double.infinity,
                               color: Colors.white,
-                              child: CachedNetworkImage(
-                                imageUrl: logic.lays,
-                              )),
+                              child:
+                                  Image.network("${logic.product[0].image}")),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "Lay's Cheddar & Sour Cream Potato Chips",
+                              "${logic.product[0].name}",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 6,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '54g',
+                                '${logic.product[0].gram}',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Padding(
                                 padding:
@@ -87,7 +83,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹60',
+                                    '₹${logic.product[0].price}',
                                     style: txt.price(),
                                   ),
                                 ),
@@ -107,10 +103,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "Coca-Cola Soft Drink",
+                          Pname: "${logic.product[1].name}",
                           Pimage: "Assets/snacks/coca.jpg",
-                          Pgram: '750 ml',
-                          Pprice: '₹40',
+                          Pgram: '${logic.product[1].gram}',
+                          Pprice: '₹${logic.product[1].price}',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -127,38 +123,32 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                            height: 110,
-                            width: double.infinity,
-                            color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.coca,
-                            ),
-                          ),
+                              height: 110,
+                              width: double.infinity,
+                              color: Colors.white,
+                              child:
+                                  Image.network("${logic.product[1].image}")),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "Coca-Cola Soft Drink",
+                              "${logic.product[1].name}",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 22,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '750 ml',
+                                '${logic.product[1].gram}',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -168,7 +158,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹40',
+                                    '₹${logic.product[1].price}',
                                     style: txt.price(),
                                   ),
                                 ),
@@ -188,10 +178,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "KurKure Green Chutnry with spicy & Hot",
+                          Pname: "${logic.product[2].name}",
                           Pimage: "Assets/snacks/kur.jpg",
-                          Pgram: '84g',
-                          Pprice: '₹60',
+                          Pgram: '${logic.product[2].gram}',
+                          Pprice: '₹${logic.product[2].price}',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -211,35 +201,29 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.kurkure,
-                            ),
+                            child: Image.network('${logic.product[2].image}'),
                           ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "KurKure Green Chutnry with spicy & Hot",
+                              "${logic.product[2].name}",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 6,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '84g',
+                                '${logic.product[2].gram}',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -249,7 +233,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹60',
+                                    '₹${logic.product[2].price}',
                                     style: txt.price(),
                                   ),
                                 ),
@@ -277,10 +261,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "Mountan Dew Soft Drink",
+                          Pname: " ${logic.product[3].name}",
                           Pimage: "Assets/snacks/dew.jpg",
-                          Pgram: '750ml',
-                          Pprice: '₹40',
+                          Pgram: '${logic.product[3].gram}',
+                          Pprice: '₹${logic.product[3].price}',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -300,35 +284,29 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: CachedNetworkImage(
-                              imageUrl: logic.mountain,
-                            ),
+                            child: Image.network("${logic.product[3].image}"),
                           ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "Mountan Dew Soft Drink",
+                              "${logic.product[3].name}",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 22,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '750ml',
+                                '${logic.product[3].gram}',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -338,7 +316,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹40',
+                                    '₹${logic.product[3].price}',
                                     style: txt.price(),
                                   ),
                                 ),
@@ -358,10 +336,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "Pepsi tin Soft Drink",
+                          Pname: "P${logic.product[5].name}",
                           Pimage: "Assets/snacks/pepsi.jpg",
-                          Pgram: '200ml',
-                          Pprice: '₹80',
+                          Pgram: '${logic.product[5].gram}',
+                          Pprice: '₹${logic.product[5].price}',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -381,33 +359,29 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: CachedNetworkImage(imageUrl: logic.pepsi),
+                            child: Image.network("${logic.product[5].image}"),
                           ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "Pepsi tin Soft Drink",
+                              "${logic.product[5].name}",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 22,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '200ml',
+                                '${logic.product[5].gram}',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -417,7 +391,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹80',
+                                    '₹${logic.product[5].price}',
                                     style: txt.price(),
                                   ),
                                 ),
@@ -437,10 +411,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "Fanta Tin soft Drink ",
+                          Pname: "${logic.product[4].name} ",
                           Pimage: "Assets/snacks/fanta.jpg",
-                          Pgram: '200ml',
-                          Pprice: '₹80',
+                          Pgram: '${logic.product[4].gram} ',
+                          Pprice: '₹${logic.product[4].price} ',
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -457,35 +431,32 @@ class cardBanner extends StatelessWidget {
                       child: Column(
                         children: [
                           Container(
-                              height: 110,
-                              width: double.infinity,
-                              color: Colors.white,
-                              child: Image.network(logic.fanta)),
+                            height: 110,
+                            width: double.infinity,
+                            color: Colors.white,
+                            child: Image.network("${logic.product[4].image}"),
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-                              "Fanta Tin soft Drink ",
+                              "${logic.product[4].name} ",
                               style: txt.snacks(),
                             ),
                           ),
-                          SizedBox(
-                            height: 22,
-                          ),
+                          Spacer(),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-                                '200ml',
+                                '${logic.product[4].gram} ',
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          Spacer(),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -495,7 +466,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    '₹80',
+                                    '₹${logic.product[4].price} ',
                                     style: txt.price(),
                                   ),
                                 ),
