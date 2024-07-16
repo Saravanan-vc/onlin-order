@@ -16,10 +16,7 @@ class cardBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
     return GetBuilder<fetchproduct>(builder: (logic) {
-<<<<<<< HEAD
       print(logic.product.length);
-=======
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
       return Column(
         children: [
           Row(
@@ -61,11 +58,12 @@ class cardBanner extends StatelessWidget {
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
                               "${logic.product[0].name}",
-<<<<<<< HEAD
                               style: txt.snacks(),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 22,
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -77,7 +75,9 @@ class cardBanner extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -107,93 +107,6 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-                          Pname: "${logic.product[1].name}",
-                          Pimage: "Assets/snacks/coca.jpg",
-                          Pgram: '${logic.product[1].gram}',
-                          Pprice: '₹${logic.product[1].price}',
-                        ),
-                        transition: Transition.cupertino,
-                        duration: Duration(milliseconds: 950),
-                      );
-                    },
-                    child: Container(
-                      height: 220,
-                      width: w / 3.2,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      child: Column(
-                        children: [
-                          Container(
-                              height: 110,
-                              width: double.infinity,
-                              color: Colors.white,
-                              child:
-                                  Image.network("${logic.product[1].image}")),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Text(
-                              "${logic.product[1].name}",
-=======
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
-                              style: txt.snacks(),
-                            ),
-                          ),
-                          Spacer(),
-                          Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Align(
-                              alignment: Alignment.centerLeft,
-                              child: Text(
-<<<<<<< HEAD
-                                '${logic.product[1].gram}',
-=======
-                                '${logic.product[0].gram}',
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
-                                style: txt.gram(),
-                              ),
-                            ),
-                          ),
-                          Spacer(),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 8.0),
-                                child: Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Text(
-<<<<<<< HEAD
-                                    '₹${logic.product[1].price}',
-=======
-                                    '₹${logic.product[0].price}',
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
-                                    style: txt.price(),
-                                  ),
-                                ),
-                              ),
-                              Mainadd(count: 0)
-                            ],
-                          )
-                        ],
-                      ),
-                    ),
-                  )
-                ],
-              ),
-              Column(
-                children: [
-                  GestureDetector(
-                    onTap: () {
-                      Get.off(
-                        Productscreen(
-<<<<<<< HEAD
-=======
                           Pname: "${logic.product[1].name}",
                           Pimage: "Assets/snacks/coca.jpg",
                           Pgram: '${logic.product[1].gram}',
@@ -273,7 +186,6 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                           Pname: "${logic.product[2].name}",
                           Pimage: "Assets/snacks/kur.jpg",
                           Pgram: '${logic.product[2].gram}',
@@ -307,13 +219,9 @@ class cardBanner extends StatelessWidget {
                               style: txt.snacks(),
                             ),
                           ),
-<<<<<<< HEAD
-                          Spacer(),
-=======
                           SizedBox(
-                            height: 7,
+                            height: 22,
                           ),
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -325,7 +233,9 @@ class cardBanner extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -408,7 +318,9 @@ class cardBanner extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -438,17 +350,10 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
-<<<<<<< HEAD
                           Pname: "P${logic.product[5].name}",
                           Pimage: "Assets/snacks/pepsi.jpg",
                           Pgram: '${logic.product[5].gram}',
                           Pprice: '₹${logic.product[5].price}',
-=======
-                          Pname: "P${logic.product[4].name}",
-                          Pimage: "Assets/snacks/pepsi.jpg",
-                          Pgram: '${logic.product[4].gram}',
-                          Pprice: '₹${logic.product[4].price}',
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                         ),
                         transition: Transition.cupertino,
                         duration: Duration(milliseconds: 950),
@@ -468,21 +373,13 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-<<<<<<< HEAD
                             child: Image.network("${logic.product[5].image}"),
-=======
-                            child: Image.network("${logic.product[4].image}"),
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                           ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
                             child: Text(
-<<<<<<< HEAD
                               "${logic.product[5].name}",
-=======
-                              "${logic.product[4].name}",
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                               style: txt.snacks(),
                             ),
                           ),
@@ -493,16 +390,14 @@ class cardBanner extends StatelessWidget {
                             child: Align(
                               alignment: Alignment.centerLeft,
                               child: Text(
-<<<<<<< HEAD
                                 '${logic.product[5].gram}',
-=======
-                                '${logic.product[4].gram}',
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                                 style: txt.gram(),
                               ),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -512,11 +407,7 @@ class cardBanner extends StatelessWidget {
                                 child: Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-<<<<<<< HEAD
                                     '₹${logic.product[5].price}',
-=======
-                                    '₹${logic.product[4].price}',
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                                     style: txt.price(),
                                   ),
                                 ),
@@ -559,11 +450,7 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-<<<<<<< HEAD
                             child: Image.network("${logic.product[4].image}"),
-=======
-                            // child: add image
->>>>>>> 89e8555b7774ba279e2cfa8d0bf9a60d31ba5549
                           ),
                           Padding(
                             padding:
@@ -573,7 +460,9 @@ class cardBanner extends StatelessWidget {
                               style: txt.snacks(),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 22,
+                          ),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -585,7 +474,9 @@ class cardBanner extends StatelessWidget {
                               ),
                             ),
                           ),
-                          Spacer(),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
@@ -619,3 +510,13 @@ class cardBanner extends StatelessWidget {
     });
   }
 }
+
+
+
+              // FractionallySizedBox(
+              //           heightFactor: 0.1,
+              //           widthFactor: 0.1,
+              //           child: Container(
+              //             color: Colors.red,
+              //           ),
+              //         )
