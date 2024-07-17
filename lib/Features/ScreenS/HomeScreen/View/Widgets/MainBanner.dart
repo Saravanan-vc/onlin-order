@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/view/electronicpage.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/everydayofferscreen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/groceries.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/homeclean.dart';
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Fashionpage/View/fashion.dart';
 import 'package:cookeme/Features/ScreenS/user/view/pages/user.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -353,7 +355,13 @@ class Main_Banner extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(
+                            Electronicpage(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
+                        },
                         child: Container(
                           height: 120,
                           width: 120,
@@ -432,7 +440,13 @@ class Main_Banner extends StatelessWidget {
                         ),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.to(
+                            Fashionpagebanner(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
+                        },
                         child: Container(
                           height: 120,
                           width: 120,

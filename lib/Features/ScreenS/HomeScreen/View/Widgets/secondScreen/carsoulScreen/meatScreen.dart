@@ -1,13 +1,11 @@
 // ignore_for_file: prefer_const_constructors, sort_child_properties_last, prefer_const_literals_to_create_immutables
 
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/add.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_connect/http/src/utils/utils.dart';
 import 'package:sizer/sizer.dart';
 
 class Meatscreen extends StatelessWidget {

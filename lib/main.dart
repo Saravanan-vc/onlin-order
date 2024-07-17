@@ -4,6 +4,7 @@ import 'package:cookeme/Features/Authentication/Login_Screen/View_Model/controll
 import 'package:cookeme/Features/Authentication/Splash_Screen/Views/Pages/Splash_Screen.dart';
 import 'package:cookeme/Features/Authentication/Sign_up/View_Models/controller.dart';
 import 'package:cookeme/Features/Authentication/forgot/ViewModel/controller.dart';
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/View_Model/electricalcontroller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/carsoulimage.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productscontroller.dart';
@@ -23,6 +24,7 @@ Future<void> main() async {
   Get.put(signcontroller());
   Get.put(cartController());
   Get.put(Carsoulimage());
+  Get.put(mainecontroller());
 
   runApp(MyApp());
 }

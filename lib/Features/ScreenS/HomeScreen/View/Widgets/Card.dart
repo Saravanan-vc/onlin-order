@@ -1,7 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:math';
-
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productscontroller.dart';
@@ -16,7 +14,7 @@ class cardBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
     return GetBuilder<fetchproduct>(builder: (logic) {
-      print(logic.product.length);
+     
       return Column(
         children: [
           Row(

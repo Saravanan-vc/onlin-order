@@ -4,7 +4,7 @@ part 'modelc.g.dart';
 
 @JsonSerializable()
 class banner {
-  @JsonKey(name: "image")
+  @JsonKey(name: "bannerImage")
   String? image;
   banner({
     this.image,

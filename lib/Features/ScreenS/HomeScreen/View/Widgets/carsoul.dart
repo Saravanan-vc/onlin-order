@@ -15,7 +15,6 @@ class carsoul extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<Carsoulimage>(
       builder: (logic) {
-        print("object ${logic.bannerc.length}");
         return CarouselSlider.builder(
             itemCount: logic.bannerc.length,
             itemBuilder: (context, Index, Rindex) => Padding(
