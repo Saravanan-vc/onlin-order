@@ -172,6 +172,13 @@ class txt {
       fontWeight: FontWeight.w400,
     );
   }
+  static TextStyle usernaewithwhite() {
+    return TextStyle(
+      color: Colors.white,
+      fontSize: 20,
+      fontWeight: FontWeight.w600,
+    );
+  }
 
   static TextStyle username() {
     return TextStyle(
