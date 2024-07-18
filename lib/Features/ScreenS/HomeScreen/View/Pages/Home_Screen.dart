@@ -8,18 +8,20 @@ import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/newtostor.dart'
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class homeScreen extends StatelessWidget {
   const homeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var currentDay = DateFormat("EEEE").format(DateTime.now());
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Main_Banner(),
+            check(currentDay),
             SizedBox(
               height: 10,
             ),
@@ -84,5 +86,66 @@ class homeScreen extends StatelessWidget {
       ),
       floatingActionButton: scroll(),
     );
+  }
+
+  check(String currentday) {
+    Widget displaythe;
+
+    Map find = {
+      "Monday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.grey,
+        child: Center(
+          child: Text("Thursday"),
+        ),
+      ),
+      "Tuesday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.green,
+        child: Center(
+          child: Text("Thursday"),
+        ),
+      ),
+      "Wednesday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.red,
+        child: Center(
+          child: Text("Thursday"),
+        ),
+      ),
+      "Thursday": Main_Banner(),
+      "Friday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.yellow,
+        child: Center(
+          child: Text("Friday"),
+        ),
+      ),
+      "Saturday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.orange,
+        child: Center(
+          child: Text("Saturday"),
+        ),
+      ),
+      "Sunday": Container(
+        height: 200,
+        width: double.infinity,
+        color: Colors.cyanAccent,
+        child: Center(
+          child: Text("Sunday"),
+        ),
+      ),
+    };
+
+    return displaythe = find[currentday] ??
+        Container(
+          child: Text("no"),
+        );
   }
 }

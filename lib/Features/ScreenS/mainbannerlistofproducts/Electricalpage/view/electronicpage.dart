@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-
 import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/View_Model/electricalcontroller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/fetchingimage.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
@@ -154,5 +153,3 @@ class Electronicpage extends StatelessWidget {
     });
   }
 }
-
-

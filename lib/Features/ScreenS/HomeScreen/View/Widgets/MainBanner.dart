@@ -10,6 +10,7 @@ import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 
 class Main_Banner extends StatelessWidget {
@@ -17,6 +18,7 @@ class Main_Banner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(DateFormat("EEEE").format(DateTime.now()));
     var w = MediaQuery.of(context).size.width;
     return Stack(children: [
       Padding(
