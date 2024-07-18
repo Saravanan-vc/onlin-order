@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/View_Model/electricalcontroller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/fetchingimage.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Fashionpage/View_Model/fashioncontroller.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,8 +16,7 @@ class Fashionpagebanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<mainecontroller>(builder: (logic) {
-      print(logic.elctricalProducts.length);
+    return GetBuilder<Fashioncontroller>(builder: (logic) {
       return Scaffold(
         backgroundColor: Colors.white,
         body: SingleChildScrollView(
@@ -34,7 +33,7 @@ class Fashionpagebanner extends StatelessWidget {
                           bottomRight: Radius.elliptical(30, 10)),
                       child: Image.network(
                         // here to change the banner
-                        "${logic.elctrical[0].image}",
+                        "${logic.elctrical[1].image}",
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -98,22 +97,20 @@ class Fashionpagebanner extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Fetchingimage(
-                    Name: "${logic.elctricalProducts[0].name}",
-                    price: int.parse("${logic.elctricalProducts[0].price}"),
-                    gram: "${logic.elctricalProducts[0].piece}",
-                    oldprice:
-                        int.parse("${logic.elctricalProducts[0].oldprice}"),
+                    Name: "${logic.products[0].name}",
+                    price: int.parse("${logic.products[0].price}"),
+                    gram: "${logic.products[0].piece}",
+                    oldprice: int.parse("${logic.products[0].oldprice}"),
                     count: 0,
-                    image: logic.elctricalProducts[0].image,
+                    image: logic.products[0].image,
                   ),
                   Fetchingimage(
-                    Name: "${logic.elctricalProducts[1].name}",
-                    price: int.parse("${logic.elctricalProducts[1].price}"),
-                    gram: "${logic.elctricalProducts[1].piece}",
-                    oldprice:
-                        int.parse("${logic.elctricalProducts[1].oldprice}"),
+                    Name: "${logic.products[1].name}",
+                    price: int.parse("${logic.products[1].price}"),
+                    gram: "${logic.products[1].piece}",
+                    oldprice: int.parse("${logic.products[1].oldprice}"),
                     count: 0,
-                    image: logic.elctricalProducts[1].image,
+                    image: logic.products[1].image,
                   ),
                 ],
               ),
@@ -124,22 +121,20 @@ class Fashionpagebanner extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Fetchingimage(
-                    Name: "${logic.elctricalProducts[2].name}",
-                    price: int.parse("${logic.elctricalProducts[2].price}"),
-                    gram: "${logic.elctricalProducts[2].piece}",
-                    oldprice:
-                        int.parse("${logic.elctricalProducts[2].oldprice}"),
+                    Name: "${logic.products[2].name}",
+                    price: int.parse("${logic.products[2].price}"),
+                    gram: "${logic.products[2].piece}",
+                    oldprice: int.parse("${logic.products[2].oldprice}"),
                     count: 0,
-                    image: logic.elctricalProducts[2].image,
+                    image: logic.products[2].image,
                   ),
                   Fetchingimage(
-                    Name: "${logic.elctricalProducts[3].name}",
-                    price: int.parse("${logic.elctricalProducts[3].price}"),
-                    gram: "${logic.elctricalProducts[3].piece}",
-                    oldprice:
-                        int.parse("${logic.elctricalProducts[3].oldprice}"),
+                    Name: "${logic.products[3].name}",
+                    price: int.parse("${logic.products[3].price}"),
+                    gram: "${logic.products[3].piece}",
+                    oldprice: int.parse("${logic.products[3].oldprice}"),
                     count: 0,
-                    image: logic.elctricalProducts[3].image,
+                    image: logic.products[3].image,
                   ),
                 ],
               ),
