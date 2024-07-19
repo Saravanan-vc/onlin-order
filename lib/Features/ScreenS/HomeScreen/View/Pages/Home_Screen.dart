@@ -5,6 +5,7 @@ import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/MainBanner.dart
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/carsoul.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/floating.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/newtostor.dart';
+import 'package:cookeme/Features/ScreenS/weeklybasedscreens/Saturday.dart';
 import 'package:cookeme/Features/ScreenS/weeklybasedscreens/fridayScreen.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
@@ -22,7 +23,7 @@ class homeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            check(currentDay),
+            check("Saturday"),
             SizedBox(
               height: 10,
             ),
@@ -119,14 +120,7 @@ class homeScreen extends StatelessWidget {
       ),
       "Thursday": Main_Banner(),
       "Friday": Fridayscreen(),
-      "Saturday": Container(
-        height: 200,
-        width: double.infinity,
-        color: Colors.orange,
-        child: Center(
-          child: Text("Saturday"),
-        ),
-      ),
+      "Saturday": Saturdaypage(),
       "Sunday": Container(
         height: 200,
         width: double.infinity,

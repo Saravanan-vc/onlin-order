@@ -5,7 +5,6 @@ import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_connect/http/src/utils/utils.dart';
-import 'package:sizer/sizer.dart';
 
 class Fridayscreen extends StatelessWidget {
   const Fridayscreen({super.key});
