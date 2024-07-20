@@ -20,8 +20,23 @@ class _scrollState extends State<scroll> {
   List<IconData> icons = [
     CupertinoIcons.bolt_fill,
     CupertinoIcons.airplane,
-    CupertinoIcons.battery_100,
+    CupertinoIcons.cloud_bolt_fill,
   ];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Timer.periodic(Duration(seconds: 2), (timer) {
+      setState(() {
+        if (o < 2) {
+          o++;
+        } else {
+          o = 0;
+        }
+      });
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,9 +51,6 @@ class _scrollState extends State<scroll> {
         backgroundColor: Colors.black,
         elevation: 6,
         onPressed: () {
-          setState(() {
-            o < 2 ? o++ : o = 0;
-          });
           showDialog(
             context: context,
             builder: (context) => Container(

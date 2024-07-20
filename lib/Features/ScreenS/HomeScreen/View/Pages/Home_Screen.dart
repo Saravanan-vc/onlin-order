@@ -23,7 +23,7 @@ class homeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            check("Thursday"),
+            check(currentDay),
             SizedBox(
               height: 10,
             ),
@@ -91,8 +91,6 @@ class homeScreen extends StatelessWidget {
   }
 
   check(String currentday) {
-    Widget displaythe;
-
     Map find = {
       "Monday": Container(
         height: 200,
@@ -131,7 +129,7 @@ class homeScreen extends StatelessWidget {
       ),
     };
 
-    return displaythe = find[currentday] ??
+    return find[currentday] ??
         Container(
           child: Text("no"),
         );
