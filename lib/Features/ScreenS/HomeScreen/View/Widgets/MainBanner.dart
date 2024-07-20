@@ -5,12 +5,13 @@ import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/ev
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/groceries.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/homeclean.dart';
 import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Fashionpage/View/fashion.dart';
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Wathcpage/view/watch.dart';
 import 'package:cookeme/Features/ScreenS/user/view/pages/user.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 
 class Main_Banner extends StatelessWidget {
@@ -18,7 +19,7 @@ class Main_Banner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print(DateFormat("EEEE").format(DateTime.now()));
+    // print(DateFormat("EEEE").format(DateTime.now()));
     var w = MediaQuery.of(context).size.width;
     return Stack(children: [
       Padding(
@@ -527,7 +528,13 @@ class Main_Banner extends StatelessWidget {
                         ),
                       ),
                       GestureDetector(
-                        onTap: () {},
+                        onTap: () {
+                          Get.off(
+                            watchpagebanner(),
+                            transition: Transition.cupertino,
+                            duration: Duration(milliseconds: 950),
+                          );
+                        },
                         child: Container(
                           height: 120,
                           width: 120,

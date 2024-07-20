@@ -40,79 +40,81 @@ class Meatscreen extends StatelessWidget {
       body: GridView.count(
         crossAxisCount: w < 500 ? 3 : 6,
         childAspectRatio: 35.w / 32.h,
-        children: List.generate(w < 500 ? 3 : 6, (index) {
-          return Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: 32.h, //32
-              width: 35.w, //35
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-              ),
-              child: Column(
-                children: [
-                  Expanded(
-                    flex: 2,
-                    child: Image.asset(
-                      "Assets/Fashion/Short/blackS.jpeg",
-                    ),
-                  ),
-                  Expanded(
-                    flex: 2,
-                    child: Container(
-                      child: Column(
-                        children: [
-                          SizedBox(
-                            height: 3,
-                          ),
-                          Wrap(
-                            children: [
-                              Text(
-                                "Lay's fvalour chedar sorce and cream",
-                                textAlign: TextAlign.center,
-                                style: txt.snacks(),
-                              )
-                            ],
-                          ),
-                          Spacer(),
-                          Align(
-                            alignment: Alignment.topLeft,
-                            child: Expanded(
-                                child: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 4.0),
-                              child: Text(
-                                "54g",
-                                style: txt.snacks(),
-                              ),
-                            )),
-                          ),
-                          Spacer(),
-                          Expanded(
-                              flex: 2,
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 4.0),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      "₹90",
-                                    ),
-                                    Mainadd(count: 0)
-                                  ],
-                                ),
-                              )),
-                        ],
+        children: List.generate(
+          w < 500 ? 3 : 6,
+          (index) {
+            return Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 32.h, //32
+                width: 35.w, //35
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Column(
+                  children: [
+                    Expanded(
+                      flex: 2,
+                      child: Image.asset(
+                        "Assets/Fashion/Short/blackS.jpeg",
                       ),
                     ),
-                  )
-                ],
+                    Expanded(
+                      flex: 2,
+                      child: Container(
+                        child: Column(
+                          children: [
+                            SizedBox(
+                              height: 3,
+                            ),
+                            Wrap(
+                              children: [
+                                Text(
+                                  "Lay's fvalour chedar sorce and cream",
+                                  textAlign: TextAlign.center,
+                                  style: txt.snacks(),
+                                )
+                              ],
+                            ),
+                            Spacer(),
+                            Align(
+                              alignment: Alignment.topLeft,
+                              child: Expanded(
+                                  child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 4.0),
+                                child: Text(
+                                  "54g",
+                                  style: txt.snacks(),
+                                ),
+                              )),
+                            ),
+                            Spacer(),
+                            Padding(
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 4.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "₹90",
+                                    style: TextStyle(decoration: TextDecoration.lineThrough),
+                                  ),
+                                  Mainadd(count: 0)
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
-            ),
-          );
-        }),
+            );
+          },
+        ),
       ),
     );
   }

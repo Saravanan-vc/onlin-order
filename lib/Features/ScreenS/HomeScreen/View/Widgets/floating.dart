@@ -1,12 +1,27 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sort_child_properties_last
 
+import 'dart:async';
+
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class scroll extends StatelessWidget {
+class scroll extends StatefulWidget {
   const scroll({super.key});
+
+  @override
+  State<scroll> createState() => _scrollState();
+}
+
+class _scrollState extends State<scroll> {
+  int o = 0;
+
+  List<IconData> icons = [
+    CupertinoIcons.bolt_fill,
+    CupertinoIcons.airplane,
+    CupertinoIcons.battery_100,
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +36,9 @@ class scroll extends StatelessWidget {
         backgroundColor: Colors.black,
         elevation: 6,
         onPressed: () {
+          setState(() {
+            o < 2 ? o++ : o = 0;
+          });
           showDialog(
             context: context,
             builder: (context) => Container(
@@ -444,7 +462,7 @@ class scroll extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              CupertinoIcons.bolt_fill,
+              icons[o],
               color: Colors.white,
               size: 28,
             ),

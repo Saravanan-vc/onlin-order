@@ -10,6 +10,7 @@ import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart'
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productscontroller.dart';
 import 'package:cookeme/Features/ScreenS/cart/View_Model/logic.dart';
 import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Fashionpage/View_Model/fashioncontroller.dart';
+import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Wathcpage/View_model/watchcontroller.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -22,6 +23,7 @@ Future<void> main() async {
   Get.put(fogcontroller());
   Get.put(fetchproduct());
   Get.put(countforproduct());
+  Get.put(Watchcontroller());
   Get.put(signcontroller());
   Get.put(cartController());
   Get.put(Carsoulimage());

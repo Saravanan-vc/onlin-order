@@ -23,7 +23,7 @@ class homeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            check("Saturday"),
+            check("Thursday"),
             SizedBox(
               height: 10,
             ),
