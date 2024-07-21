@@ -14,7 +14,6 @@ class cardBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     var w = MediaQuery.of(context).size.width;
     return GetBuilder<fetchproduct>(builder: (logic) {
-     
       return Column(
         children: [
           Row(
@@ -26,6 +25,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 1,
                           Pname: "${logic.product[0].name}",
                           Pimage: "Assets/snacks/coca.jpg",
                           Pgram: '${logic.product[0].gram}',
@@ -49,8 +49,10 @@ class cardBanner extends StatelessWidget {
                               height: 110,
                               width: double.infinity,
                               color: Colors.white,
-                              child:
-                                  Image.network("${logic.product[0].image}")),
+                              child: Hero(
+                                  tag: 1,
+                                  child: Image.network(
+                                      "${logic.product[0].image}"))),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -105,6 +107,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 2,
                           Pname: "${logic.product[1].name}",
                           Pimage: "Assets/snacks/coca.jpg",
                           Pgram: '${logic.product[1].gram}',
@@ -128,8 +131,10 @@ class cardBanner extends StatelessWidget {
                               height: 110,
                               width: double.infinity,
                               color: Colors.white,
-                              child:
-                                  Image.network("${logic.product[1].image}")),
+                              child: Hero(
+                                  tag: 2,
+                                  child: Image.network(
+                                      "${logic.product[1].image}"))),
                           Padding(
                             padding:
                                 const EdgeInsets.symmetric(horizontal: 8.0),
@@ -184,6 +189,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 3,
                           Pname: "${logic.product[2].name}",
                           Pimage: "Assets/snacks/kur.jpg",
                           Pgram: '${logic.product[2].gram}',
@@ -207,7 +213,10 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network('${logic.product[2].image}'),
+                            child: Hero(
+                                tag: 3,
+                                child:
+                                    Image.network('${logic.product[2].image}')),
                           ),
                           Padding(
                             padding:
@@ -271,6 +280,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 4,
                           Pname: " ${logic.product[3].name}",
                           Pimage: "Assets/snacks/dew.jpg",
                           Pgram: '${logic.product[3].gram}',
@@ -294,7 +304,10 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network("${logic.product[3].image}"),
+                            child: Hero(
+                                tag: 4,
+                                child:
+                                    Image.network("${logic.product[3].image}")),
                           ),
                           Padding(
                             padding:
@@ -348,6 +361,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 5,
                           Pname: "P${logic.product[5].name}",
                           Pimage: "Assets/snacks/pepsi.jpg",
                           Pgram: '${logic.product[5].gram}',
@@ -371,7 +385,10 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network("${logic.product[5].image}"),
+                            child: Hero(
+                                tag: 5,
+                                child:
+                                    Image.network("${logic.product[5].image}")),
                           ),
                           Padding(
                             padding:
@@ -425,6 +442,7 @@ class cardBanner extends StatelessWidget {
                     onTap: () {
                       Get.off(
                         Productscreen(
+                          tag: 6,
                           Pname: "${logic.product[4].name} ",
                           Pimage: "Assets/snacks/fanta.jpg",
                           Pgram: '${logic.product[4].gram} ',
@@ -448,7 +466,10 @@ class cardBanner extends StatelessWidget {
                             height: 110,
                             width: double.infinity,
                             color: Colors.white,
-                            child: Image.network("${logic.product[4].image}"),
+                            child: Hero(
+                                tag: 6,
+                                child:
+                                    Image.network("${logic.product[4].image}")),
                           ),
                           Padding(
                             padding:

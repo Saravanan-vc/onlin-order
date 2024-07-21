@@ -23,7 +23,7 @@ class homeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            check(currentDay),
+            check("Thursday"),
             SizedBox(
               height: 10,
             ),
@@ -97,7 +97,7 @@ class homeScreen extends StatelessWidget {
         width: double.infinity,
         color: Colors.grey,
         child: Center(
-          child: Text("Thursday"),
+          child: Text("monday"),
         ),
       ),
       "Tuesday": Container(
@@ -105,7 +105,7 @@ class homeScreen extends StatelessWidget {
         width: double.infinity,
         color: Colors.green,
         child: Center(
-          child: Text("Thursday"),
+          child: Text("tuesday"),
         ),
       ),
       "Wednesday": Container(
@@ -113,7 +113,7 @@ class homeScreen extends StatelessWidget {
         width: double.infinity,
         color: Colors.red,
         child: Center(
-          child: Text("Thursday"),
+          child: Text("wednesday"),
         ),
       ),
       "Thursday": Main_Banner(),

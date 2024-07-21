@@ -14,11 +14,13 @@ import 'package:get/get_core/src/get_main.dart';
 
 class Productscreen extends StatelessWidget {
   final String Pname;
+  int tag;
   final dynamic Pimage;
   final String Pgram;
   final String Pprice;
-  const Productscreen({
+  Productscreen({
     super.key,
+    this.tag = 1,
     required this.Pname,
     required this.Pimage,
     required this.Pgram,
@@ -34,8 +36,7 @@ class Productscreen extends StatelessWidget {
           onPressed: () => Get.off(
             indexof(),
             transition: Transition.cupertino,
-            duration: Duration(milliseconds: 950),
-            
+            duration: Duration(milliseconds: 925),
           ),
           icon: Icon(
             CupertinoIcons.back,
@@ -61,7 +62,7 @@ class Productscreen extends StatelessWidget {
               color: Colors.grey.shade300,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Image.asset(Pimage),
+                child: Hero(tag: tag, child: Image.asset(Pimage)),
               ),
             ),
             SizedBox(
