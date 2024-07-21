@@ -17,22 +17,14 @@ class signcontroller extends GetxController {
   FirebaseAuth firebaseAuth1 = FirebaseAuth.instance;
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   late CollectionReference pereference;
-  List<userdoc> users = [];
+ 
   @override
   void onInit() async {
     pereference = firebaseFirestore.collection("user");
-    await fetchdata();
+    
     super.onInit();
   }
 
-  fetchdata() async {
-    QuerySnapshot querySnapshot = await pereference.get();
-    List<userdoc> colle = querySnapshot.docs
-        .map((doc) => userdoc.fromjson(doc.data() as Map<String, dynamic>))
-        .toList();
-    users.clear();
-    users.assignAll(colle);
-  }
 
   Future<void> signwithauth({
     required String email,
