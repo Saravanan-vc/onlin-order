@@ -12,7 +12,6 @@ class controller extends GetxController {
   TextEditingController EmailC = TextEditingController();
   TextEditingController PhoneC = TextEditingController();
   late SharedPreferences preferences;
-  var nameof;
 
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
@@ -46,12 +45,6 @@ class controller extends GetxController {
       for (int i = 0; i < a; i++) {
         if (EmailC.text == users[i].usermail) {
           preferences.setString('name', "${users[i].username}");
-          print(
-            "-----------------------------------------------123456789---------------------------------",
-          );
-          var f = await preferences.getString('name');
-          nameof = f;
-          print(f);
         }
       }
 
@@ -63,5 +56,9 @@ class controller extends GetxController {
       print(e);
       Get.snackbar("Faild", e.toString());
     }
+  }
+
+  Name() {
+    return preferences.getString('name');
   }
 }

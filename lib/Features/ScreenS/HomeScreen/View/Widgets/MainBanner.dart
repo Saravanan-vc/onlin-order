@@ -15,7 +15,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 // import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class Main_Banner extends StatefulWidget {
   const Main_Banner({super.key});
@@ -74,7 +74,7 @@ class _Main_BannerState extends State<Main_Banner> {
                     width: 6,
                   ),
                   Text(
-                    logic.nameof,
+                    logic.Name(),
                     style: txt.username(),
                   ),
                   SizedBox(

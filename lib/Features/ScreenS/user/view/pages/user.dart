@@ -87,7 +87,6 @@ class Userprofiel extends StatelessWidget {
               onTap: () async {
                 SharedPreferences preferences =
                     await SharedPreferences.getInstance();
-
                 preferences.clear();
                 Get.off(loginScreen());
               },

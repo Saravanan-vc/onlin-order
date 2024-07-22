@@ -27,7 +27,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 1,
                           Pname: "${logic.product[0].name}",
-                          Pimage: "Assets/snacks/coca.jpg",
+                          Pimage: "${logic.product[0].image}",
                           Pgram: '${logic.product[0].gram}',
                           Pprice: '₹${logic.product[0].price}',
                         ),
@@ -109,7 +109,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 2,
                           Pname: "${logic.product[1].name}",
-                          Pimage: "Assets/snacks/coca.jpg",
+                          Pimage: "${logic.product[1].image}",
                           Pgram: '${logic.product[1].gram}',
                           Pprice: '₹${logic.product[1].price}',
                         ),
@@ -191,7 +191,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 3,
                           Pname: "${logic.product[2].name}",
-                          Pimage: "Assets/snacks/kur.jpg",
+                          Pimage: "${logic.product[2].image}",
                           Pgram: '${logic.product[2].gram}',
                           Pprice: '₹${logic.product[2].price}',
                         ),
@@ -282,7 +282,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 4,
                           Pname: " ${logic.product[3].name}",
-                          Pimage: "Assets/snacks/dew.jpg",
+                          Pimage: "${logic.product[3].image}",
                           Pgram: '${logic.product[3].gram}',
                           Pprice: '₹${logic.product[3].price}',
                         ),
@@ -363,7 +363,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 5,
                           Pname: "P${logic.product[5].name}",
-                          Pimage: "Assets/snacks/pepsi.jpg",
+                          Pimage: "${logic.product[5].image}",
                           Pgram: '${logic.product[5].gram}',
                           Pprice: '₹${logic.product[5].price}',
                         ),
@@ -444,7 +444,7 @@ class cardBanner extends StatelessWidget {
                         Productscreen(
                           tag: 6,
                           Pname: "${logic.product[4].name} ",
-                          Pimage: "Assets/snacks/fanta.jpg",
+                          Pimage: "${logic.product[4].image}",
                           Pgram: '${logic.product[4].gram} ',
                           Pprice: '₹${logic.product[4].price} ',
                         ),

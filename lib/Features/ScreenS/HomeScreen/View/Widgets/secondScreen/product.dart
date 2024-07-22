@@ -62,7 +62,7 @@ class Productscreen extends StatelessWidget {
               color: Colors.grey.shade300,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Hero(tag: tag, child: Image.asset(Pimage)),
+                child: Hero(tag: tag, child: Image.network(Pimage)),
               ),
             ),
             SizedBox(
