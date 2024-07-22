@@ -10,14 +10,14 @@ import 'package:cookeme/Features/ScreenS/weeklybasedscreens/fridayScreen.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
+// import 'package:intl/intl.dart';
 
 class homeScreen extends StatelessWidget {
   const homeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    var currentDay = DateFormat("EEEE").format(DateTime.now());
+    // var currentDay = DateFormat("EEEE").format(DateTime.now());
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(

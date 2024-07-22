@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cookeme/Features/Authentication/Login_Screen/View/Pages/Login_Screen.dart';
-import 'package:cookeme/Features/Authentication/Sign_up/View_Models/model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
