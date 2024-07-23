@@ -61,4 +61,8 @@ class controller extends GetxController {
   Name() {
     return preferences.getString('name');
   }
+
+  remove() {
+    return preferences.clear();
+  }
 }

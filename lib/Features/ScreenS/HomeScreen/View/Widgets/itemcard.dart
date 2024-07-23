@@ -125,6 +125,7 @@ class Itemcard extends StatelessWidget {
               children: [
                 Text(
                   "₹$oldprice",
+                  style: TextStyle(decoration: TextDecoration.lineThrough),
                 ),
                 Mainadd(count: count),
               ],
