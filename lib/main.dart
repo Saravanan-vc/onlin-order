@@ -32,6 +32,7 @@ Future<void> main() async {
   Get.put(Fashioncontroller());
   Get.put(mainecontroller());
 
+
   runApp(MyApp());
 }
 
@@ -47,3 +48,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+
+// flutter pub run build_runner build --delete-conflicting-outputs

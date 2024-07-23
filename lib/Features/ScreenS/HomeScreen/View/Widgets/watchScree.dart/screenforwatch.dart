@@ -22,7 +22,9 @@ class _ScreenforwatchState extends State<Screenforwatch> {
     return GetBuilder<Wcontroller>(
       builder: (logic) {
         return Scaffold(
+          backgroundColor: Colors.white,
           appBar: AppBar(
+            backgroundColor: Colors.white,
             leading: IconButton(
               onPressed: () {
                 Get.off(
@@ -89,23 +91,47 @@ class _ScreenforwatchState extends State<Screenforwatch> {
                 height: 2.h,
               ),
               CarouselSlider.builder(
-                itemCount: 3,
+                itemCount: logic.carsoul.length,
                 itemBuilder: (context, index, Index) {
                   return Container(
                     margin: EdgeInsets.only(left: 10),
-                    decoration: BoxDecoration(
-                      color: index == 0
-                          ? Colors.blue
-                          : index == 1
-                              ? Colors.red
-                              : Colors.green,
-                      borderRadius: BorderRadius.circular(9),
-                    ),
+                    decoration: BoxDecoration(),
+                    child: index == 0
+                        ? Stack(
+                            children: [
+                              Container(
+                                height: 120,
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(9),
+                                  child: Image.network(
+                                    "${logic.carsoul[1].image}",
+                                    fit: BoxFit.values[2],
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  "R O L E X ",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              )
+                            ],
+                          )
+                        : ClipRRect(
+                            borderRadius: BorderRadius.circular(9),
+                            child: Image.network(
+                              "${logic.carsoul[0].image}",
+                              fit: BoxFit.values[2],
+                            ),
+                          ),
                   );
                 },
                 options: CarouselOptions(
                   autoPlay: true,
-                  height: 200,
+                  height: 120,
                 ),
               )
             ],
