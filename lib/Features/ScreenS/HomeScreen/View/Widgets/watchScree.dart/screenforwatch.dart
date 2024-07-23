@@ -120,6 +120,7 @@ class _ScreenforwatchState extends State<Screenforwatch> {
                               )
                             ],
                           )
+                          // dont forgot bro this
                         : ClipRRect(
                             borderRadius: BorderRadius.circular(9),
                             child: Image.network(
