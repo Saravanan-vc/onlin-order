@@ -52,6 +52,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   delayed_display: ^2.0.0
   connectivity_plus: ^6.0.3
+  internet_connection_checker: ^1.0.0+1
   
 
 dev_dependencies:
