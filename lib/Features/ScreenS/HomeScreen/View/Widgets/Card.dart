@@ -23,7 +23,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 1,
                           Pname: "${logic.product[0].name}",
@@ -105,7 +105,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 2,
                           Pname: "${logic.product[1].name}",
@@ -187,7 +187,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 3,
                           Pname: "${logic.product[2].name}",
@@ -278,7 +278,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 4,
                           Pname: " ${logic.product[3].name}",
@@ -359,7 +359,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 5,
                           Pname: "P${logic.product[5].name}",
@@ -440,7 +440,7 @@ class cardBanner extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Get.off(
+                      Get.to(
                         Productscreen(
                           tag: 6,
                           Pname: "${logic.product[4].name} ",

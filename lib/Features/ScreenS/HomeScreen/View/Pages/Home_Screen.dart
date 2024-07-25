@@ -12,15 +12,24 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 // import 'package:intl/intl.dart';
 
-class homeScreen extends StatelessWidget {
+class homeScreen extends StatefulWidget {
   const homeScreen({super.key});
+
+  @override
+  State<homeScreen> createState() => _homeScreenState();
+}
+
+class _homeScreenState extends State<homeScreen> {
+  final ScrollController _scrollc = ScrollController();
 
   @override
   Widget build(BuildContext context) {
     // var currentDay = DateFormat("EEEE").format(DateTime.now());
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
+        controller: _scrollc,
         child: Column(
           children: [
             check("Thursday"),

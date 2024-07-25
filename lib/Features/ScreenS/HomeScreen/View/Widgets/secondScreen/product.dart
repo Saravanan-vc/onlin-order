@@ -33,11 +33,7 @@ class Productscreen extends StatelessWidget {
       appBar: AppBar(
         elevation: 2,
         leading: IconButton(
-          onPressed: () => Get.off(
-            indexof(),
-            transition: Transition.cupertino,
-            duration: Duration(milliseconds: 925),
-          ),
+          onPressed: () => Get.back(),
           icon: Icon(
             CupertinoIcons.back,
             size: 24,

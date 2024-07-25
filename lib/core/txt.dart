@@ -64,6 +64,16 @@ class txt {
     );
   }
 
+  static TextStyle oldprice() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 18,
+      fontWeight: FontWeight.w500,
+      decoration: TextDecoration.lineThrough,
+      decorationStyle: TextDecorationStyle.solid,
+    );
+  }
+
   static TextStyle Heading() {
     return TextStyle(
       color: Colors.white,
@@ -172,6 +182,7 @@ class txt {
       fontWeight: FontWeight.w400,
     );
   }
+
   static TextStyle usernaewithwhite() {
     return TextStyle(
       color: Colors.white,

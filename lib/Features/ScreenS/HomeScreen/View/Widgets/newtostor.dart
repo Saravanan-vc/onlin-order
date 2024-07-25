@@ -2,6 +2,7 @@
 
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/Fashion.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/watchScree.dart/screenforwatch.dart';
+import 'package:cookeme/Features/ScreenS/KitchenScreen/View/pages/kitchen.dart';
 import 'package:cookeme/Features/ScreenS/toysScreen/View/pages/toyScreen.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
@@ -105,35 +106,40 @@ class Newtostor extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                height: 140,
-                width: 180,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    width: 2,
-                    color: Colors.black.withOpacity(0.09),
-                  ),
-                  borderRadius: BorderRadius.all(
-                    Radius.circular(8),
-                  ),
+              InkWell(
+                onTap: () => Get.to(
+                  KitchenScreen(),
                 ),
-                child: Column(
-                  children: [
-                    Align(
-                      alignment: Alignment.topLeft,
-                      child: Text(
-                        "Kitchen Items",
-                        style: txt.offer(),
-                      ),
+                child: Container(
+                  height: 140,
+                  width: 180,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      width: 2,
+                      color: Colors.black.withOpacity(0.09),
                     ),
-                    Align(
-                      alignment: Alignment.bottomRight,
-                      child: Image.asset(
-                        "Assets/snacks/mixi.png",
-                        scale: 13,
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(8),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "Kitchen Items",
+                          style: txt.offer(),
+                        ),
                       ),
-                    )
-                  ],
+                      Align(
+                        alignment: Alignment.bottomRight,
+                        child: Image.asset(
+                          "Assets/snacks/mixi.png",
+                          scale: 13,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               GestureDetector(
