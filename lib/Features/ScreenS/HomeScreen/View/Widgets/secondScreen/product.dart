@@ -2,7 +2,6 @@
 
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/itemcard.dart';
-import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:cookeme/core/paddingH.dart';
 import 'package:cookeme/core/sizedbox.dart';
 import 'package:cookeme/core/txt.dart';

@@ -15,6 +15,7 @@ class KitchenScreen extends StatelessWidget {
     var wh = 95.w;
     var mw = MediaQuery.of(context).size.width;
     var mh = MediaQuery.of(context).size.height;
+    var suh = mh / 4;
     ScrollController scrollController = ScrollController();
     return Scaffold(
       appBar: AppBar(
@@ -83,7 +84,7 @@ class KitchenScreen extends StatelessWidget {
                             style: txt.price(),
                           ),
                           SizedBox(
-                            height: mh / 80,
+                            height: suh / 4,
                           ),
                           Align(
                             alignment: Alignment.centerLeft,
@@ -95,7 +96,7 @@ class KitchenScreen extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: mh / 80,
+                            height: suh / 4,
                           ),
                           Align(
                             alignment: Alignment.centerLeft,
@@ -107,7 +108,7 @@ class KitchenScreen extends StatelessWidget {
                             ),
                           ),
                           SizedBox(
-                            height: mh / 80,
+                            height: suh / 4,
                           ),
                           Row(
                             children: [
@@ -144,10 +145,10 @@ class KitchenScreen extends StatelessWidget {
                                             "Get for 20% discount",
                                             style: txt.snacks(),
                                           ),
-                                          Icon(
+                                          const Icon(
                                             CupertinoIcons.chevron_down,
                                             size: 18,
-                                          )
+                                          ),
                                         ],
                                       ),
                                     ),
@@ -157,7 +158,7 @@ class KitchenScreen extends StatelessWidget {
                             ],
                           ),
                           SizedBox(
-                            height: mh / 90,
+                            height: suh / 4,
                           ),
                           Padd.horizontal(
                             Row(
