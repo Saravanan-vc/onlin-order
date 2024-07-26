@@ -57,6 +57,7 @@ class _MainaddState extends State<Mainadd> {
               ),
             )
           : Container(
+              height: 27.55,
               decoration: BoxDecoration(
                 border: Border.all(width: 2, color: Colors.red),
                 borderRadius: BorderRadius.all(
@@ -76,10 +77,12 @@ class _MainaddState extends State<Mainadd> {
                             duration: Duration(seconds: 1),
                             dismissDirection: DismissDirection.horizontal);
                       },
-                      child: Icon(
-                        CupertinoIcons.minus,
-                        color: Colors.red,
-                        size: 20,
+                      child: FittedBox(
+                        child: Icon(
+                          CupertinoIcons.minus,
+                          color: Colors.red,
+                          size: 20,
+                        ),
                       ),
                     ),
                   ),
@@ -110,10 +113,12 @@ class _MainaddState extends State<Mainadd> {
                           }
                         });
                       },
-                      child: Icon(
-                        CupertinoIcons.add,
-                        color: Colors.red,
-                        size: 20,
+                      child: FittedBox(
+                        child: Icon(
+                          CupertinoIcons.add,
+                          color: Colors.red,
+                          size: 20,
+                        ),
                       ),
                     ),
                   )

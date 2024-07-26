@@ -15,7 +15,6 @@ class KitchenScreen extends StatelessWidget {
     var wh = 95.w;
     var mw = MediaQuery.of(context).size.width;
     var mh = MediaQuery.of(context).size.height;
-    var suh = mh / 4;
     ScrollController scrollController = ScrollController();
     return Scaffold(
       appBar: AppBar(
@@ -83,9 +82,7 @@ class KitchenScreen extends StatelessWidget {
                             'name of the product',
                             style: txt.price(),
                           ),
-                          SizedBox(
-                            height: suh / 4,
-                          ),
+                          Spacer(),
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Padd.horonlyleft(
@@ -95,9 +92,7 @@ class KitchenScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: suh / 4,
-                          ),
+                          Spacer(),
                           Align(
                             alignment: Alignment.centerLeft,
                             child: Padd.horonlyleft(
@@ -107,9 +102,7 @@ class KitchenScreen extends StatelessWidget {
                               ),
                             ),
                           ),
-                          SizedBox(
-                            height: suh / 4,
-                          ),
+                          Spacer(),
                           Row(
                             children: [
                               Padding(
@@ -117,14 +110,14 @@ class KitchenScreen extends StatelessWidget {
                                 child: GestureDetector(
                                   onTap: () {
                                     print("object");
-
                                     showBottomSheet(
-                                      showDragHandle: false,
                                       context: context,
-                                      builder: (g) => Container(
-                                        height: 250,
-                                        color: Colors.amber,
-                                      ),
+                                      builder: (context) {
+                                        return Container(
+                                          height: 250,
+                                          color: Colors.amber,
+                                        );
+                                      },
                                     );
                                   },
                                   child: Container(
@@ -157,9 +150,7 @@ class KitchenScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
-                            height: suh / 4,
-                          ),
+                          Spacer(),
                           Padd.horizontal(
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -171,7 +162,8 @@ class KitchenScreen extends StatelessWidget {
                                 Mainadd(count: 0)
                               ],
                             ),
-                          )
+                          ),
+                          Spacer(),
                         ],
                       ),
                     );
