@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cookeme/Features/Authentication/Sign_up/View_Models/controller.dart';
 import 'package:cookeme/Features/Authentication/forgot/ViewModel/controller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/watchScree.dart/controller/wcontroller.dart';
+import 'package:cookeme/Features/ScreenS/KitchenScreen/View_Model/kitchen.dart';
 import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/View_Model/electricalcontroller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/carsoulimage.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productcount.dart';
@@ -52,6 +53,7 @@ class depencinjection {
     Get.put(cartController());
     Get.put(Wcontroller());
     Get.put(Carsoulimage());
+    Get.put(kitchen());
     Get.put(Fashioncontroller());
     Get.put(mainecontroller());
   }
