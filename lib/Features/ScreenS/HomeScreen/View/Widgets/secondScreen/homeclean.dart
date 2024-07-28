@@ -99,6 +99,7 @@ class Homeclean extends StatelessWidget {
                   count: 0,
                   oldprice: 180,
                   price: 120,
+                  check: false,
                   image: "Assets/seconclean/harpic.png", //add sucess
                 ),
                 Itemcard(
@@ -107,6 +108,7 @@ class Homeclean extends StatelessWidget {
                   count: 0,
                   oldprice: 180,
                   price: 120,
+                  check: false,
                   image: "Assets/seconclean/bathroom.png",
                 ),
               ],
@@ -123,6 +125,7 @@ class Homeclean extends StatelessWidget {
                   count: 0,
                   oldprice: 260,
                   price: 249,
+                  check: false,
                   image: "Assets/seconclean/fab.jpeg", // finished to add
                 ),
                 Itemcard(
@@ -131,6 +134,7 @@ class Homeclean extends StatelessWidget {
                   count: 0,
                   oldprice: 450,
                   price: 320,
+                  check: false,
                   image: "Assets/seconclean/lysol.png",
                 ),
               ],

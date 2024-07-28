@@ -99,6 +99,7 @@ class Groceries extends StatelessWidget {
                   count: 0,
                   oldprice: 100,
                   price: 90,
+                  check: false,
                   image: "Assets/secongrocery/gold.png", //add sucess
                 ),
                 Itemcard(
@@ -107,6 +108,7 @@ class Groceries extends StatelessWidget {
                   count: 0,
                   oldprice: 450,
                   price: 400,
+                  check: false,
                   image: "Assets/secongrocery/Atta.webp",
                 ),
               ],
@@ -123,6 +125,7 @@ class Groceries extends StatelessWidget {
                   count: 0,
                   oldprice: 260,
                   price: 249,
+                  check: false,
                   image: "Assets/secongrocery/amul.png", // finished to add
                 ),
                 Itemcard(
@@ -131,6 +134,7 @@ class Groceries extends StatelessWidget {
                   count: 0,
                   oldprice: 250,
                   price: 220,
+                  check: false,
                   image: "Assets/secongrocery/jam.png",
                 ),
               ],

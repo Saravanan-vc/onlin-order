@@ -13,9 +13,11 @@ class Itemcard extends StatelessWidget {
   final String gram;
   final int oldprice;
   final int count;
-  const Itemcard(
+  bool check;
+  Itemcard(
       {super.key,
       this.image,
+      this.check = true,
       required this.Name,
       required this.price,
       required this.gram,
@@ -37,10 +39,12 @@ class Itemcard extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(4),
             height: 265 / 2,
-            child: Image.network(
-              image,
-              fit: BoxFit.cover,
-            ),
+            child: check
+                ? Image.network(
+                    image,
+                    fit: BoxFit.cover,
+                  )
+                : Image.asset(image),
           ),
           SizedBox(
             height: 8,

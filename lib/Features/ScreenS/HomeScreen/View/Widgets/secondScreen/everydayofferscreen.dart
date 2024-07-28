@@ -99,6 +99,7 @@ class Seconscreen extends StatelessWidget {
                   count: 0,
                   oldprice: 450,
                   price: 299,
+                  check: false,
                   image: "Assets/seconchocolate/5star.jpg",
                 ),
                 Itemcard(
@@ -107,6 +108,7 @@ class Seconscreen extends StatelessWidget {
                   count: 0,
                   oldprice: 300,
                   price: 240,
+                  check: false,
                   image: "Assets/seconchocolate/dairymilkcollection.png",
                 ),
               ],
@@ -123,6 +125,7 @@ class Seconscreen extends StatelessWidget {
                   count: 0,
                   oldprice: 350,
                   price: 249,
+                  check: false,
                   image: "Assets/seconchocolate/kitkat.png", // finished to add
                 ),
                 Itemcard(
@@ -131,6 +134,7 @@ class Seconscreen extends StatelessWidget {
                   count: 0,
                   oldprice: 100,
                   price: 80,
+                  check: false,
                   image: "Assets/seconchocolate/dairymilk.png",
                 ),
               ],

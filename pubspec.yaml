@@ -53,6 +53,7 @@ dependencies:
   delayed_display: ^2.0.0
   connectivity_plus: ^6.0.3
   internet_connection_checker: ^1.0.0+1
+  flutter_screenutil: ^5.9.3
   
 
 dev_dependencies:
