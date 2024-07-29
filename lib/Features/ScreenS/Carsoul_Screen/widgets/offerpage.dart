@@ -3,9 +3,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class Bottowsheet extends StatelessWidget {
-  double height;
-  Bottowsheet({super.key, this.height = 250});
+class offerP extends StatelessWidget {
+  final double height;
+  final double width;
+  offerP({
+    super.key,
+    required this.height,
+    required this.width,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +31,7 @@ class Bottowsheet extends StatelessWidget {
               );
             },
             child: Container(
-              width: MediaQuery.of(context).size.width / 2.1,
+              width: width,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(4),
                 color: Colors.amber.shade200,

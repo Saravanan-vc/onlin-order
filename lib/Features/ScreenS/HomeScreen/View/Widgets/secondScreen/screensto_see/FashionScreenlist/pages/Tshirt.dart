@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/Widgets/card.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/Widgets/offerBanner.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/screensto_see/FashionScreenlist/Widgets/card.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/screensto_see/FashionScreenlist/Widgets/offerBanner.dart';
 import 'package:flutter/material.dart';
 
 class Tshirtpage extends StatelessWidget {

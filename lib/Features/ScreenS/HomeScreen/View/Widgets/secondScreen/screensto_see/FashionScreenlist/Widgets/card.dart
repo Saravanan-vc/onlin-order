@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/FashionScreenlist/Widgets/Button.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/screensto_see/FashionScreenlist/Widgets/Button.dart';
 import 'package:cookeme/core/paddingH.dart';
 import 'package:cookeme/core/sizedbox.dart';
 import 'package:cookeme/core/txt.dart';

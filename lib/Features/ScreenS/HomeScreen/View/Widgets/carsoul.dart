@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/Mansoon.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/meatScreen.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/carsoulScreen/sentScreen.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/Mansoon.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/meatScreen.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/sentScreen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/carsoulimage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -31,7 +31,7 @@ class carsoul extends StatelessWidget {
                         switch (Index) {
                           case 0: //sent
                             {
-                              Get.off(
+                              Get.to(
                                 Meatscreen(),
                                 transition: Transition.cupertino,
                                 duration: Duration(milliseconds: 950),
