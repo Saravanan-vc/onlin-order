@@ -9,9 +9,9 @@ part of 'kitchemodel.dart';
 Kitchemodel _$KitchemodelFromJson(Map<String, dynamic> json) => Kitchemodel(
       Kname: json['kname'] as String?,
       kimage: json['kimage'] as String?,
-      kolprice: json['koldprice'] as int?,
+      kolprice: (json['koldprice'] as num?)?.toInt(),
       kpiece: json['kpiece'] as String?,
-      kprice: json['kprice'] as int?,
+      kprice: (json['kprice'] as num?)?.toInt(),
     );
 
 Map<String, dynamic> _$KitchemodelToJson(Kitchemodel instance) =>

@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:cookeme/Features/ScreenS/Carsoul_Screen/Mansoon.dart';
-import 'package:cookeme/Features/ScreenS/Carsoul_Screen/meatScreen.dart';
-import 'package:cookeme/Features/ScreenS/Carsoul_Screen/sentScreen.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/pages/Mansoon.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/pages/meatScreen.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/pages/sentScreen.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/carsoulimage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
