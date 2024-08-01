@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 class MeatController extends GetxController implements carsoulBlueprint {
   final FirebaseFirestore _firebaseFirestore = FirebaseFirestore.instance;
   late CollectionReference collectionReference;
+
   @override
   List products = <meatmodel>[];
 

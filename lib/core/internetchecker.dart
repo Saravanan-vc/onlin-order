@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:cookeme/Features/Authentication/Sign_up/View_Models/controller.dart';
 import 'package:cookeme/Features/Authentication/forgot/ViewModel/controller.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/controller/Manson_controller.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/controller/Meat_controller.dart';
+import 'package:cookeme/Features/ScreenS/Carsoul_Screen/controller/Sent_controller.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/watchScree.dart/controller/wcontroller.dart';
 import 'package:cookeme/Features/ScreenS/KitchenScreen/View_Model/kitchen.dart';
 import 'package:cookeme/Features/ScreenS/mainbannerlistofproducts/Electricalpage/View_Model/electricalcontroller.dart';
@@ -60,5 +62,7 @@ class depencinjection {
 
     // CARSOUL SLIDER CONTROLLER :-
     Get.put(MeatController());
+    Get.put(SentController());
+    Get.put(MansonController());
   }
 }
