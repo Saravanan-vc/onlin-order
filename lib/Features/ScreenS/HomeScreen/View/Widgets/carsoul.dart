@@ -15,53 +15,57 @@ class carsoul extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetBuilder<Carsoulimage>(
       builder: (logic) {
-        return CarouselSlider.builder(
-            itemCount: logic.bannerc.length,
-            itemBuilder: (context, Index, Rindex) => Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: MediaQuery.of(context).size.width,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8),
+        print(logic.bannerc.length);
+        return FutureBuilder(
+          future: logic.fetchdata(),
+          builder: (context, snapshot) => CarouselSlider.builder(
+              itemCount: logic.bannerc.length,
+              itemBuilder: (context, Index, Rindex) => Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(
+                          Radius.circular(8),
+                        ),
                       ),
-                    ),
-                    child: GestureDetector(
-                      onTap: () {
-                        switch (Index) {
-                          case 0: //sent
-                            {
-                              Get.to(
-                                Meatscreen(),
-                                transition: Transition.cupertino,
-                                duration: Duration(milliseconds: 950),
-                              );
-                            }
-                          case 1: //Meat
-                            {
-                              Get.off(
-                                Mansoonscreen(),
-                                transition: Transition.cupertino,
-                                duration: Duration(milliseconds: 950),
-                              );
-                            }
-                          case 2: //monsoon
-                            {
-                              Get.off(
-                                Sentscreen(),
-                                transition: Transition.cupertino,
-                                duration: Duration(milliseconds: 950),
-                              );
-                            }
-                        }
-                      },
-                      child: Image.network(
-                        "${logic.bannerc[Index].image}",
+                      child: GestureDetector(
+                        onTap: () {
+                          switch (Index) {
+                            case 0: //sent
+                              {
+                                Get.to(
+                                  Meatscreen(),
+                                  transition: Transition.cupertino,
+                                  duration: Duration(milliseconds: 950),
+                                );
+                              }
+                            case 1: //Meat
+                              {
+                                Get.off(
+                                  Mansoonscreen(),
+                                  transition: Transition.cupertino,
+                                  duration: Duration(milliseconds: 950),
+                                );
+                              }
+                            case 2: //monsoon
+                              {
+                                Get.off(
+                                  Sentscreen(),
+                                  transition: Transition.cupertino,
+                                  duration: Duration(milliseconds: 950),
+                                );
+                              }
+                          }
+                        },
+                        child: Image.network(
+                          "${logic.bannerc[Index].image}",
+                        ),
                       ),
                     ),
                   ),
-                ),
-            options: CarouselOptions(autoPlay: true, height: 180));
+              options: CarouselOptions(autoPlay: true, height: 180),),
+        );
       },
     );
   }

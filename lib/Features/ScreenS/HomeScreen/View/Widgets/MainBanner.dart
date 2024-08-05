@@ -84,7 +84,10 @@ class _Main_BannerState extends State<Main_Banner> {
               ),
             ),
             Container(
-              child: Lottie.asset("Assets/rive/sale.json"),
+              child: Lottie.asset(
+                "Assets/rive/sale.json",
+                renderCache: RenderCache.raster,
+              ),
             ),
             SizedBox(
               height: 10,
