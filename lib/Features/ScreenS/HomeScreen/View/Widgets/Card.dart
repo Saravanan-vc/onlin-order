@@ -1,11 +1,13 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/addbutton.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/View/Widgets/secondScreen/product.dart';
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/productscontroller.dart';
 import 'package:cookeme/core/txt.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:sizer/sizer.dart';
 
 class cardBanner extends StatelessWidget {
@@ -50,13 +52,34 @@ class cardBanner extends StatelessWidget {
                           child: Column(
                             children: [
                               Container(
-                                  height: 110,
-                                  width: double.infinity,
-                                  color: Colors.white,
-                                  child: Hero(
-                                      tag: 1,
-                                      child: Image.network(
-                                          "${logic.product[0].image}"))),
+                                height: 110,
+                                width: double.infinity,
+                                color: Colors.white,
+                                child: Hero(
+                                  tag: 1,
+                                  child: CachedNetworkImage(
+                                    imageUrl: "${logic.product[0].image}",
+                                    progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 8.0),
@@ -137,9 +160,29 @@ class cardBanner extends StatelessWidget {
                                   width: double.infinity,
                                   color: Colors.white,
                                   child: Hero(
-                                      tag: 2,
-                                      child: Image.network(
-                                          "${logic.product[1].image}"))),
+                                    tag: 2,
+                                    child: CachedNetworkImage(
+                                      imageUrl: "${logic.product[1].image}",
+                                       progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    ),
+                                  )),
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(horizontal: 8.0),
@@ -220,9 +263,29 @@ class cardBanner extends StatelessWidget {
                                 width: double.infinity,
                                 color: Colors.white,
                                 child: Hero(
-                                    tag: 3,
-                                    child: Image.network(
-                                        '${logic.product[2].image}')),
+                                  tag: 3,
+                                  child: CachedNetworkImage(
+                                    imageUrl: "${logic.product[2].image}",
+                                     progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding:
@@ -312,9 +375,29 @@ class cardBanner extends StatelessWidget {
                                 width: double.infinity,
                                 color: Colors.white,
                                 child: Hero(
-                                    tag: 4,
-                                    child: Image.network(
-                                        "${logic.product[3].image}")),
+                                  tag: 4,
+                                  child: CachedNetworkImage(
+                                    imageUrl: "${logic.product[3].image}",
+                                     progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding:
@@ -394,9 +477,29 @@ class cardBanner extends StatelessWidget {
                                 width: double.infinity,
                                 color: Colors.white,
                                 child: Hero(
-                                    tag: 5,
-                                    child: Image.network(
-                                        "${logic.product[5].image}")),
+                                  tag: 5,
+                                  child: CachedNetworkImage(
+                                    imageUrl: "${logic.product[5].image}",
+                                     progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding:
@@ -476,9 +579,29 @@ class cardBanner extends StatelessWidget {
                                 width: double.infinity,
                                 color: Colors.white,
                                 child: Hero(
-                                    tag: 6,
-                                    child: Image.network(
-                                        "${logic.product[4].image}")),
+                                  tag: 6,
+                                  child: CachedNetworkImage(
+                                    imageUrl: "${logic.product[4].image}",
+                                     progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ),
                               Padding(
                                 padding:

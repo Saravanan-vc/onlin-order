@@ -74,7 +74,7 @@ class _Main_BannerState extends State<Main_Banner> {
                     width: 6,
                   ),
                   Text(
-                    logic.Name(),
+                    logic.Name() ?? "username",
                     style: txt.username(),
                   ),
                   SizedBox(

@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/view/pages/Mansoon.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/view/pages/meatScreen.dart';
@@ -7,6 +8,7 @@ import 'package:cookeme/Features/ScreenS/Carsoul_Screen/view/pages/sentScreen.da
 import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/carsoulimage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shimmer/shimmer.dart';
 
 class carsoul extends StatelessWidget {
   const carsoul({super.key});
@@ -58,9 +60,27 @@ class carsoul extends StatelessWidget {
                               }
                           }
                         },
-                        child: Image.network(
-                          "${logic.bannerc[Index].image}",
-                        ),
+                        child:CachedNetworkImage(
+                                    imageUrl: "${logic.bannerc[Index].image}",
+                                     progressIndicatorBuilder:
+                                        (context, url, progress) => SizedBox(
+                                      width: 200.0,
+                                      height: 100.0,
+                                      child: Shimmer.fromColors(
+                                        baseColor: Colors.grey.shade200,
+                                        highlightColor: Colors.grey.shade100,
+                                        child: Container(
+                                          width: 200.0,
+                                          height: 100.0,
+                                          decoration: BoxDecoration(
+                                            color: Colors.grey.shade200,
+                                            borderRadius:
+                                                BorderRadius.circular(8),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                       ),
                     ),
                   ),
