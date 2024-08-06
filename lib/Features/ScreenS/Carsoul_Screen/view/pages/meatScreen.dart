@@ -2,6 +2,7 @@
 
 import 'dart:io';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/controller/Meat_controller.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/view/widgets/button_for.dart';
 import 'package:cookeme/Features/ScreenS/Carsoul_Screen/view/widgets/offerpage.dart';
@@ -9,6 +10,7 @@ import 'package:cookeme/core/txt.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:sizer/sizer.dart';
 
 class Meatscreen extends StatelessWidget {
@@ -67,9 +69,25 @@ class Meatscreen extends StatelessWidget {
                       ),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
-                        child: Image.network(
-                          '${logic.products[index].image}',
-                          fit: BoxFit.cover,
+                        child: CachedNetworkImage(
+                          imageUrl: "${logic.products[index].image}",
+                          progressIndicatorBuilder: (context, url, progress) =>
+                              SizedBox(
+                            width: 200.0,
+                            height: 100.0,
+                            child: Shimmer.fromColors(
+                              baseColor: Colors.grey.shade200,
+                              highlightColor: Colors.grey.shade100,
+                              child: Container(
+                                width: 200.0,
+                                height: 100.0,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey.shade200,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                              ),
+                            ),
+                          ),
                         ),
                       ),
                     ),
