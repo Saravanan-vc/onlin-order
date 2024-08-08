@@ -127,7 +127,7 @@ class Fetchingimage extends StatelessWidget {
                   "₹$oldprice",
                   style: TextStyle(decoration: TextDecoration.lineThrough),
                 ),
-                Mainadd(count: count),
+                Mainadd(count: count, image: image , name: Name, price: price,),
               ],
             ),
           )

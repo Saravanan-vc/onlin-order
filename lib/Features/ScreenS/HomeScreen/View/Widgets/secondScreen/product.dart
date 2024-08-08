@@ -95,7 +95,7 @@ class Productscreen extends StatelessWidget {
                           Align(
                             alignment: Alignment.topLeft,
                             child: Text(
-                              Pprice,
+                              "₹$Pprice",
                               style: txt.cartempty(),
                             ),
                           ),
@@ -165,9 +165,12 @@ class Productscreen extends StatelessWidget {
                     ) // padding
                   ],
                 ),
-                Padd.horizontal(
-                  Mainadd(count: 0),
-                ),
+                Padd.horizontal(Mainadd(
+                  count: 0,
+                  image: Pimage,
+                  name: Pname,
+                  price: int.parse(Pprice),
+                )),
               ],
             ),
             siz.ten(),

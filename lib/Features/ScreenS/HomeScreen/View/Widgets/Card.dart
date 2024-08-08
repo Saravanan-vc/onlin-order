@@ -35,7 +35,7 @@ class cardBanner extends StatelessWidget {
                               Pname: "${logic.product[0].name}",
                               Pimage: "${logic.product[0].image}",
                               Pgram: '${logic.product[0].gram}',
-                              Pprice: '₹${logic.product[0].price}',
+                              Pprice: '${logic.product[0].price}',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -120,7 +120,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[0].image}",
+                                    name: "${logic.product[0].name}",
+                                    price: logic.product[0].price ?? 0,
+                                  )
                                 ],
                               )
                             ],
@@ -139,7 +144,7 @@ class cardBanner extends StatelessWidget {
                               Pname: "${logic.product[1].name}",
                               Pimage: "${logic.product[1].image}",
                               Pgram: '${logic.product[1].gram}',
-                              Pprice: '₹${logic.product[1].price}',
+                              Pprice: '${logic.product[1].price}',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -163,24 +168,24 @@ class cardBanner extends StatelessWidget {
                                     tag: 2,
                                     child: CachedNetworkImage(
                                       imageUrl: "${logic.product[1].image}",
-                                       progressIndicatorBuilder:
-                                        (context, url, progress) => SizedBox(
-                                      width: 200.0,
-                                      height: 100.0,
-                                      child: Shimmer.fromColors(
-                                        baseColor: Colors.grey.shade200,
-                                        highlightColor: Colors.grey.shade100,
-                                        child: Container(
-                                          width: 200.0,
-                                          height: 100.0,
-                                          decoration: BoxDecoration(
-                                            color: Colors.grey.shade200,
-                                            borderRadius:
-                                                BorderRadius.circular(8),
+                                      progressIndicatorBuilder:
+                                          (context, url, progress) => SizedBox(
+                                        width: 200.0,
+                                        height: 100.0,
+                                        child: Shimmer.fromColors(
+                                          baseColor: Colors.grey.shade200,
+                                          highlightColor: Colors.grey.shade100,
+                                          child: Container(
+                                            width: 200.0,
+                                            height: 100.0,
+                                            decoration: BoxDecoration(
+                                              color: Colors.grey.shade200,
+                                              borderRadius:
+                                                  BorderRadius.circular(8),
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
                                     ),
                                   )),
                               Padding(
@@ -223,7 +228,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[1].image}",
+                                    name: "${logic.product[1].name}",
+                                    price: logic.product[1].price ?? 0,
+                                  )
                                 ],
                               )
                             ],
@@ -242,7 +252,7 @@ class cardBanner extends StatelessWidget {
                               Pname: "${logic.product[2].name}",
                               Pimage: "${logic.product[2].image}",
                               Pgram: '${logic.product[2].gram}',
-                              Pprice: '₹${logic.product[2].price}',
+                              Pprice: '${logic.product[2].price}',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -266,7 +276,7 @@ class cardBanner extends StatelessWidget {
                                   tag: 3,
                                   child: CachedNetworkImage(
                                     imageUrl: "${logic.product[2].image}",
-                                     progressIndicatorBuilder:
+                                    progressIndicatorBuilder:
                                         (context, url, progress) => SizedBox(
                                       width: 200.0,
                                       height: 100.0,
@@ -327,7 +337,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[2].image}",
+                                    name: "${logic.product[2].name}",
+                                    price: logic.product[2].price ?? 0,
+                                  )
                                 ],
                               ),
                             ],
@@ -354,7 +369,7 @@ class cardBanner extends StatelessWidget {
                               Pname: " ${logic.product[3].name}",
                               Pimage: "${logic.product[3].image}",
                               Pgram: '${logic.product[3].gram}',
-                              Pprice: '₹${logic.product[3].price}',
+                              Pprice: '${logic.product[3].price}',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -378,7 +393,7 @@ class cardBanner extends StatelessWidget {
                                   tag: 4,
                                   child: CachedNetworkImage(
                                     imageUrl: "${logic.product[3].image}",
-                                     progressIndicatorBuilder:
+                                    progressIndicatorBuilder:
                                         (context, url, progress) => SizedBox(
                                       width: 200.0,
                                       height: 100.0,
@@ -437,7 +452,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[3].image}",
+                                    name: "${logic.product[3].name}",
+                                    price: logic.product[3].price ?? 0,
+                                  )
                                 ],
                               )
                             ],
@@ -456,7 +476,7 @@ class cardBanner extends StatelessWidget {
                               Pname: "P${logic.product[5].name}",
                               Pimage: "${logic.product[5].image}",
                               Pgram: '${logic.product[5].gram}',
-                              Pprice: '₹${logic.product[5].price}',
+                              Pprice: '${logic.product[5].price}',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -480,7 +500,7 @@ class cardBanner extends StatelessWidget {
                                   tag: 5,
                                   child: CachedNetworkImage(
                                     imageUrl: "${logic.product[5].image}",
-                                     progressIndicatorBuilder:
+                                    progressIndicatorBuilder:
                                         (context, url, progress) => SizedBox(
                                       width: 200.0,
                                       height: 100.0,
@@ -539,7 +559,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[5].image}",
+                                    name: "${logic.product[5].name}",
+                                    price: logic.product[5].price ?? 0,
+                                  )
                                 ],
                               )
                             ],
@@ -558,7 +583,7 @@ class cardBanner extends StatelessWidget {
                               Pname: "${logic.product[4].name} ",
                               Pimage: "${logic.product[4].image}",
                               Pgram: '${logic.product[4].gram} ',
-                              Pprice: '₹${logic.product[4].price} ',
+                              Pprice: '${logic.product[4].price} ',
                             ),
                             transition: Transition.cupertino,
                             duration: Duration(milliseconds: 950),
@@ -582,7 +607,7 @@ class cardBanner extends StatelessWidget {
                                   tag: 6,
                                   child: CachedNetworkImage(
                                     imageUrl: "${logic.product[4].image}",
-                                     progressIndicatorBuilder:
+                                    progressIndicatorBuilder:
                                         (context, url, progress) => SizedBox(
                                       width: 200.0,
                                       height: 100.0,
@@ -643,7 +668,12 @@ class cardBanner extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Mainadd(count: 0)
+                                  Mainadd(
+                                    count: 0,
+                                    image: "${logic.product[4].image}",
+                                    name: "${logic.product[4].name}",
+                                    price: logic.product[4].price ?? 0,
+                                  )
                                 ],
                               ),
                             ],

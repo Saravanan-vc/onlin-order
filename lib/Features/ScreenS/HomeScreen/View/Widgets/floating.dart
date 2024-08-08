@@ -342,7 +342,13 @@ class _scrollState extends State<scroll> {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            Mainadd(count: 0)
+                                            Mainadd(
+                                              count: 0,
+                                              image: "requirde to add",
+                                              name: '',
+                                              price: 0,
+                                            )
+                                            //addit
                                           ],
                                         ),
                                       )
@@ -396,7 +402,12 @@ class _scrollState extends State<scroll> {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            Mainadd(count: 0)
+                                            Mainadd(
+                                              count: 0,
+                                              image: "requirde to add",
+                                              name: '',
+                                              price: 0,
+                                            )
                                           ],
                                         ),
                                       )
@@ -450,7 +461,12 @@ class _scrollState extends State<scroll> {
                                               "₹999",
                                               style: txt.dc(),
                                             ),
-                                            Mainadd(count: 0)
+                                            Mainadd(
+                                              count: 0,
+                                              image: "requirde to add",
+                                              name: '',
+                                              price: 0,
+                                            )
                                           ],
                                         ),
                                       )

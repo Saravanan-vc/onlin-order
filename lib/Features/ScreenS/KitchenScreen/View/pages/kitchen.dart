@@ -131,7 +131,7 @@ class KitchenScreen extends StatelessWidget {
                                       '₹${logic.fetcheddata[index].kprice}',
                                       style: txt.price(),
                                     ),
-                                    Mainadd(count: 0)
+                                    Mainadd(count: 0, image: '', name:'${logic.fetcheddata[index].kpiece}' , price: logic.fetcheddata[index].kprice ?? 0,)
                                   ],
                                 ),
                               ),

@@ -1,5 +1,9 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:math';
+
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/modelp.dart';
 import 'package:cookeme/Features/ScreenS/cart/View_Model/logic.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:cookeme/core/txt.dart';
@@ -173,19 +177,22 @@ class cartpage extends StatelessWidget {
                           itemCount: logic.Product.length,
                           itemBuilder: (context, index) {
                             return Card(
-                              child: ListTile(
-                                leading: Container(
-                                  height: 12.h,
-                                  width: 14.w,
-                                  color: Colors.red,
-                                ),
-                                title: Text('product name'),
-                                subtitle: Text('gram'),
-                                trailing: Container(
-                                  height: 2.h,
-                                  color: Colors.green,
-                                  width: 2.w,
-                                ),
+                              child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 4.0),
+                                child: ListTile(
+                                    leading: SizedBox(
+                                      height: 10.h,
+                                      width: 10.w,
+                                      child: CachedNetworkImage(
+                                          imageUrl:
+                                              "${logic.Product[index].image}"),
+                                    ),
+                                    title: Text("${logic.Product[index].name}"),
+                                    trailing: Text(
+                                      '₹${logic.Product[index].price}',
+                                      style: txt.price(),
+                                    )),
                               ),
                             );
                           },
@@ -216,11 +223,8 @@ class cartpage extends StatelessWidget {
                                         ),
                                         Align(
                                           alignment: Alignment.topLeft,
-                                          child: Text(
-                                            "246",
-                                            style: txt.label(),
-                                          ),
-                                        )
+                                          child: logic.calculation(),
+                                        ),
                                       ],
                                     ),
                                     Expanded(
@@ -228,9 +232,11 @@ class cartpage extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 8.0),
                                         child: Container(
-                                          child: Center(child: Text('data')),
                                           height: 5.h,
                                           color: Colors.red,
+                                          child: Center(
+                                            child: Text('data'),
+                                          ),
                                         ),
                                       ),
                                     ),

@@ -20,7 +20,7 @@ class _addState extends State<add> {
       return GestureDetector(
         onTap: () {
           if (logic.count < 1) {
-            logic.Product.add(1);
+            // logic.Product.add(1);
             print(logic.Product.length);
             logic.update();
             Get.snackbar(
