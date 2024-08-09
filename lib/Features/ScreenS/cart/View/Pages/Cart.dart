@@ -170,8 +170,7 @@ class cartpage extends StatelessWidget {
                       SizedBox(
                         height: 1.h,
                       ),
-                      SizedBox(
-                        height: 60.h,
+                      Expanded(
                         child: ListView.builder(
                           scrollDirection: Axis.vertical,
                           itemCount: logic.Product.length,
@@ -181,72 +180,86 @@ class cartpage extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 4.0),
                                 child: ListTile(
-                                    leading: SizedBox(
-                                      height: 10.h,
-                                      width: 10.w,
-                                      child: CachedNetworkImage(
-                                          imageUrl:
-                                              "${logic.Product[index].image}"),
-                                    ),
-                                    title: Text("${logic.Product[index].name}"),
-                                    trailing: Text(
-                                      '₹${logic.Product[index].price}',
-                                      style: txt.price(),
-                                    )),
+                                  leading: SizedBox(
+                                    height: 10.h,
+                                    width: 10.w,
+                                    child: CachedNetworkImage(
+                                        imageUrl:
+                                            "${logic.Product[index].image}"),
+                                  ),
+                                  title: Text("${logic.Product[index].name}"),
+                                  trailing: Text(
+                                    '1 X  ₹${logic.Product[index].price}',
+                                    style: txt.price(),
+                                  ),
+                                ),
                               ),
                             );
                           },
                         ),
                       ),
-                      Expanded(
-                        child: Container(
-                          child: Padding(
-                            padding:
-                                const EdgeInsets.symmetric(horizontal: 8.0),
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [Text("location")],
-                                ),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Align(
-                                          alignment: Alignment.topLeft,
-                                          child: Text(
-                                            "To pay",
-                                            style: txt.label(),
-                                          ),
+                      Container(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Text("other : "),
+                                  Text(
+                                    'give location',
+                                  )
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    children: [
+                                      Align(
+                                        alignment: Alignment.topLeft,
+                                        child: Text(
+                                          "To pay",
+                                          style: txt.slabel(),
                                         ),
-                                        Align(
-                                          alignment: Alignment.topLeft,
-                                          child: logic.calculation(),
-                                        ),
-                                      ],
-                                    ),
-                                    Expanded(
-                                      child: Padding(
-                                        padding: const EdgeInsets.symmetric(
-                                            horizontal: 8.0),
-                                        child: Container(
-                                          height: 5.h,
+                                      ),
+                                      Align(
+                                        alignment: Alignment.topLeft,
+                                        child: logic.calculation(),
+                                      ),
+                                    ],
+                                  ),
+                                  Expanded(
+                                    child: Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8.0),
+                                      child: Container(
+                                        height: 5.h,
+                                        decoration: BoxDecoration(
                                           color: Colors.red,
-                                          child: Center(
-                                            child: Text('data'),
+                                          borderRadius:
+                                              BorderRadius.circular(6),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            'CONTINUE TO PAYMENT',
+                                            style:
+                                                TextStyle(color: Colors.white),
                                           ),
                                         ),
                                       ),
                                     ),
-                                  ],
-                                )
-                              ],
-                            ),
+                                  ),
+                                ],
+                              )
+                            ],
                           ),
                         ),
-                      )
+                      ),
+                      SizedBox(
+                        height: 2.h,
+                      ),
                     ],
                   ),
                 ),

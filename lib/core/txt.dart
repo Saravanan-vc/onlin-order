@@ -10,6 +10,13 @@ class txt {
       fontWeight: FontWeight.w600,
     );
   }
+  static TextStyle slabel() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 16,
+      fontWeight: FontWeight.w300,
+    );
+  }
 
   static TextStyle cartempty() {
     return TextStyle(
@@ -119,6 +126,13 @@ class txt {
     return TextStyle(
       color: Colors.black,
       fontSize: 16,
+      fontWeight: FontWeight.w600,
+    );
+  }
+   static TextStyle Pprice() {
+    return TextStyle(
+      color: Colors.black,
+      fontSize: 20,
       fontWeight: FontWeight.w600,
     );
   }

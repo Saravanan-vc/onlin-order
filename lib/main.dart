@@ -19,11 +19,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Sizer(builder: (context, orientation, deviceType) {
-      return GetMaterialApp(
-        home: splashScreen(),
-      );
-    });
+    return Sizer(
+      builder: (context, orientation, deviceType) {
+        return GetMaterialApp(
+          home: splashScreen(),
+        );
+      },
+    );
   }
 }
 

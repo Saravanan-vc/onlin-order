@@ -15,7 +15,7 @@ class cartController extends GetxController {
     count--;
     update();
   }
-  
+
   Widget calculation() {
     int tolal = 0;
     for (int i = 0; i < Product.length; i++) {
@@ -23,8 +23,8 @@ class cartController extends GetxController {
       tolal = tolal + int.parse(a);
     }
     return Text(
-      tolal.toString(),
-      style: txt.price(),
+      "₹${tolal.toString()}",
+      style: txt.Pprice(),
     );
   }
 }
