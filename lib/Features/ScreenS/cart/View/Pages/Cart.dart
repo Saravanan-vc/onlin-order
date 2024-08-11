@@ -1,9 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'dart:math';
-
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cookeme/Features/ScreenS/HomeScreen/Viw_model/modelp.dart';
 import 'package:cookeme/Features/ScreenS/cart/View_Model/logic.dart';
 import 'package:cookeme/Features/ScreenS/index/View/Pages/index.dart';
 import 'package:cookeme/core/txt.dart';
@@ -12,8 +9,34 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 
-class cartpage extends StatelessWidget {
+class cartpage extends StatefulWidget {
   const cartpage({super.key});
+
+  @override
+  State<cartpage> createState() => _cartpageState();
+}
+
+class _cartpageState extends State<cartpage>
+    with SingleTickerProviderStateMixin {
+  late AnimationController controller;
+  late Animation<Offset> size;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    controller = AnimationController(
+        vsync: this, duration: const Duration(milliseconds: 1000))
+      ..forward();
+    size = Tween<Offset>(begin: Offset(-1, -1), end: Offset(0, 0))
+        .animate(CurvedAnimation(parent: controller, curve: Curves.decelerate));
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    controller.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -175,25 +198,46 @@ class cartpage extends StatelessWidget {
                           scrollDirection: Axis.vertical,
                           itemCount: logic.Product.length,
                           itemBuilder: (context, index) {
-                            return Card(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(vertical: 4.0),
-                                child: ListTile(
-                                  leading: SizedBox(
-                                    height: 10.h,
-                                    width: 10.w,
-                                    child: CachedNetworkImage(
-                                        imageUrl:
-                                            "${logic.Product[index].image}"),
-                                  ),
-                                  title: Text("${logic.Product[index].name}"),
-                                  trailing: Text(
-                                    '1 X  ₹${logic.Product[index].price}',
-                                    style: txt.price(),
+                            return Dismissible(
+                              key: ValueKey(index),
+                              child: Card(
+                                child: Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 4.0),
+                                  child: ListTile(
+                                    leading: SizedBox(
+                                      height: 10.h,
+                                      width: 10.w,
+                                      // child: SlideTransition(
+                                      //   position: size,
+                                      //   child: CachedNetworkImage(
+                                      //       imageUrl:
+                                      //           "${logic.Product[index].image}"),
+                                      // )
+                                      child: CachedNetworkImage(
+                                          imageUrl:
+                                              "${logic.Product[index].image}"),
+                                    ),
+                                    title: Text("${logic.Product[index].name}"),
+                                    trailing: Text(
+                                      '1 X  ₹${logic.Product[index].price}',
+                                      style: txt.price(),
+                                    ),
                                   ),
                                 ),
                               ),
+                              onDismissed: (direction) {
+                                if (direction == DismissDirection.endToStart) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      behavior: SnackBarBehavior.floating,
+                                      content: Text("remove from cart"),
+                                    ),
+                                  );
+                                  logic.Product.removeAt(index);
+                                  logic.update();
+                                }
+                              },
                             );
                           },
                         ),

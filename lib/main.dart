@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
     return Sizer(
       builder: (context, orientation, deviceType) {
         return GetMaterialApp(
+          debugShowCheckedModeBanner: false,
           home: splashScreen(),
         );
       },

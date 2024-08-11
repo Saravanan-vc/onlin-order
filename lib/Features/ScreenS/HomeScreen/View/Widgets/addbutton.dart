@@ -31,13 +31,7 @@ class _MainaddState extends State<Mainadd> {
         return GestureDetector(
           onTap: () {
             if (widget.count < 1) {
-              context.Product.add(
-                cartfunction(
-                  image: widget.image,
-                  name: widget.name,
-                  price: widget.price,
-                ),
-              );
+              context.addthelist(widget.image, widget.name, widget.price);
               Get.snackbar(
                 backgroundColor: Colors.green.withOpacity(0.4),
                 "Sucess",
@@ -92,7 +86,7 @@ class _MainaddState extends State<Mainadd> {
                             setState(() {
                               widget.count--;
                             });
-                            context.Product.clear();
+                            context.checkit(widget.name);
                             Get.snackbar(
                                 "Removed", "Item as ben removed from cart",
                                 animationDuration: Duration(seconds: 1),

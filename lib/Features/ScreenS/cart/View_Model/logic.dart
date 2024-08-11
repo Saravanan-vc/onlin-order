@@ -27,4 +27,26 @@ class cartController extends GetxController {
       style: txt.Pprice(),
     );
   }
+
+  void checkit(String name) {
+    for (int i = 0; i < Product.length; i++) {
+      if (name == Product[i].name) {
+        Product.removeAt(i);
+      }
+    }
+  }
+
+  void addthelist(
+    String image,
+    String name,
+    int price,
+  ) {
+    Product.add(
+      cartfunction(
+        image: image,
+        name: name,
+        price:price,
+      ),
+    );
+  }
 }

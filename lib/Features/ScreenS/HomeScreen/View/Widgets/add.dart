@@ -29,9 +29,7 @@ class _addState extends State<add> {
               "Add to cart",
               colorText: Colors.white,
             );
-            setState(() {
-              logic.Increment();
-            });
+            logic.Increment();
           } else {
             Get.snackbar(
               backgroundColor: Colors.red.withOpacity(0.4),
@@ -74,9 +72,9 @@ class _addState extends State<add> {
                           logic.Product.removeLast();
                           print(logic.Product.length);
                           logic.update();
-                          setState(() {
-                            logic.Decrement();
-                          });
+
+                          logic.Decrement();
+
                           Get.snackbar(
                               "Removed", "Item as ben removed from cart",
                               animationDuration: Duration(seconds: 2),
